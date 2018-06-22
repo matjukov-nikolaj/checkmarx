@@ -8,6 +8,41 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/Application.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/CheckMarxCollectorTask.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/CheckmarxCollectorTask.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/CheckMarxCollector.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/CheckMarxProject.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/CheckmarxCollector.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/repository/CheckmarxCollectorRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
       </map>
     </option>
   </component>
