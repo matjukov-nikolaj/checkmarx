@@ -1,18 +1,18 @@
 package com.capitalone.dashboard.collector;
 
-import com.capitalone.dashboard.model.CheckMarxCollector;
 
-import com.capitalone.dashboard.model.CodeQuality;
-import com.capitalone.dashboard.model.CollectorItemConfigHistory;
+import com.capitalone.dashboard.model.CheckMarxProject;
+import com.capitalone.dashboard.model.CheckMarxCollector;
+import com.capitalone.dashboard.model.CodeSecurity;
+import com.capitalone.dashboard.collector.DefaultCheckMarxClient;
+
 import com.capitalone.dashboard.model.CollectorItem;
 import com.capitalone.dashboard.model.CollectorType;
-import com.capitalone.dashboard.model.ConfigHistOperationType;
-import com.capitalone.dashboard.model.CheckMarxCollector;
-import com.capitalone.dashboard.model.CheckMarxProject;
-import com.capitalone.dashboard.repository.BaseCollectorRepository;
-import com.capitalone.dashboard.repository.CodeQualityRepository;
+import com.capitalone.dashboard.repository.*;
+
 import com.capitalone.dashboard.repository.ComponentRepository;
-import com.capitalone.dashboard.repository.CheckMarxCollectorRepository;
+import com.vividsolutions.jts.util.CollectionUtil;
+
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -20,13 +20,19 @@ import org.bson.types.ObjectId;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.TaskScheduler;
 import org.springframework.stereotype.Component;
 import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
+import org.w3c.dom.Document;
+import org.w3c.dom.NamedNodeMap;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -34,34 +40,41 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+@Component
 public class CheckMarxCollectorTask extends CollectorTask<CheckMarxCollector> {
+    @SuppressWarnings({"PMD.UnusedPrivateField", "unused"})
+    private static final Log LOG = LogFactory.getLog(CheckMarxCollectorTask.class);
 
     private final CheckMarxCollectorRepository checkMarxCollectorRepository;
-
-    @Value("${cron}") // Injected from application.properties
-    private String cron;
-
-    @Value("${apiToken}") // Injected from application.properties
-    private String apiToken;
+    private final CheckMarxProjectRepository checkMarxProjectRepository;
+    private final CheckMarxProfileRepostory checkMarxProfileRepostory;
+    private final CodeSecurityRepository codeSecurityRepository;
+    private final DefaultCheckMarxClient checkMarxClient;
+    private final CheckMarxSettings checkMarxSettings;
+    private final ComponentRepository dbComponentRepository;
 
     @Autowired
     public CheckMarxCollectorTask(TaskScheduler taskScheduler,
-                                  CheckMarxCollectorRepository checkMarxCollectorRepository) {
+                                  CheckMarxCollectorRepository checkMarxCollectorRepository,
+                                  CheckMarxProjectRepository checkMarxProjectRepository,
+                                  CheckMarxProfileRepostory checkMarxProfileRepostory,
+                                  CodeSecurityRepository codeSecurityRepository,
+                                  DefaultCheckMarxClient checkMarxClient,
+                                  CheckMarxSettings checkMarxSettings,
+                                  ComponentRepository dbComponentRepository) {
         super(taskScheduler, "CheckMarx");
         this.checkMarxCollectorRepository = checkMarxCollectorRepository;
+        this.checkMarxProjectRepository = checkMarxProjectRepository;
+        this.checkMarxProfileRepostory = checkMarxProfileRepostory;
+        this.codeSecurityRepository = codeSecurityRepository;
+        this.checkMarxClient = checkMarxClient;
+        this.checkMarxSettings = checkMarxSettings;
+        this.dbComponentRepository = dbComponentRepository;
     }
 
     @Override
     public CheckMarxCollector getCollector() {
-
-        CheckMarxCollector collector = new CheckMarxCollector();
-
-        collector.setName("CheckMarx"); // Must be unique to all collectors for a given Dashboard Application instance
-  //      collector.setCollectorType(CollectorType.Feature);
-        collector.setEnabled(true);
-        collector.setApiToken(apiToken);
-
-        return collector;
+        return CheckMarxCollector.prototype(checkMarxSettings.getServers());
     }
 
     @Override
@@ -71,23 +84,115 @@ public class CheckMarxCollectorTask extends CollectorTask<CheckMarxCollector> {
 
     @Override
     public String getCron() {
-        return cron;
+        return checkMarxSettings.getCron();
     }
 
     @Override
     public void collect(CheckMarxCollector collector) {
+        Set<ObjectId> udId = new HashSet<>();
+        udId.add(collector.getId());
+        List<CheckMarxProject> existingProjects = checkMarxProjectRepository.findByCollectorIdIn(udId);
+        List<CheckMarxProject> latestProjects = new ArrayList<>();
+        clean(collector, existingProjects);
+        if (!CollectionUtils.isEmpty(collector.getCheckMarxServers())) {
+            for (int i = 0; i < collector.getCheckMarxServers().size(); ++i) {
+                String instanceUrl = collector.getCheckMarxServers().get(i);
+                logBanner(instanceUrl);
 
-        // Collector logic
-//        PivotalTrackerApi api = new PivotalTrackerApi(collector.getApiToken());
-//
-//        for (Project project : api.getProjects()) {
-//
-//            PivotalTrackerCollectorItem collectorItem = getOrCreateCollectorItems(project.getProjectId());
-//
-//            // Naive implementation
-//            deleteFeaturesFor(collectorItem);
-//
-//            addFeaturesFor(collectorItem, project.getStories());
-//        }
+                List<CheckMarxProject> projects = checkMarxClient.getProjects(instanceUrl);
+                latestProjects.addAll(projects);
+                log("Fetched projects   " + projects.size());
+                addNewProjects(projects, existingProjects, collector);
+
+                refreshData(enabledProjects(collector, instanceUrl, projects));
+                log("Finished");
+            }
+        }
+    }
+
+    private void addNewProjects(List<CheckMarxProject> projects, List<CheckMarxProject> existingProjects, CheckMarxCollector collector) {
+        int count = 0;
+        List<CheckMarxProject> newProjects = new ArrayList<>();
+        for (CheckMarxProject project : projects) {
+            if (!existingProjects.contains(project)) {
+                project.setCollectorId(collector.getId());
+                project.setEnabled(false);
+                project.setDescription(project.getProjectName());
+                newProjects.add(project);
+                count++;
+            }
+        }
+        if (!CollectionUtils.isEmpty(newProjects)) {
+            checkMarxProjectRepository.save(newProjects);
+        }
+        log("New projects       " + count);
+    }
+
+    private void refreshData(List<CheckMarxProject> checkMarxProjects) {
+        int count = 0;
+        for (CheckMarxProject project : checkMarxProjects) {
+            CodeSecurity codeSecurity = checkMarxClient.currentCodeSecurity(project);
+            if (codeSecurity != null && isNewSecurityData(project, codeSecurity)) {
+                codeSecurity.setCollectorItemId(project.getId());
+                codeSecurityRepository.save(codeSecurity);
+                count++;
+            }
+        }
+        log("Updated            " + count);
+    }
+
+    private List<CheckMarxProject> enabledProjects(CheckMarxCollector collector, String instanceUrl, List<CheckMarxProject> projects) {
+        List<CheckMarxProject> enabledProjects = new ArrayList<>();
+        CheckMarxProject checkMarxProject;
+        for (CheckMarxProject project : projects) {
+            checkMarxProject = checkMarxProjectRepository.findCheckMarxProject(collector.getId(), project.getInstanceUrl(), project.getProjectId());
+            if (!checkMarxProject.equals(null)) {
+                enabledProjects.add(checkMarxProject);
+            }
+        }
+        return enabledProjects.equals(null) ? projects : enabledProjects;
+    }
+
+    private boolean isNewSecurityData(CheckMarxProject project, CodeSecurity codeSecurity) {
+        CodeSecurity kek = codeSecurityRepository.findByCollectorItemIdAndTimestamp(
+                project.getId(), codeSecurity.getTimestamp());
+        return kek == null;
+    }
+
+    /**
+     * Clean up unused sonar collector items
+     *
+     * @param collector the {@link CheckMarxCollector}
+     */
+
+    @SuppressWarnings("PMD.AvoidDeeplyNestedIfStmts") // agreed PMD, fixme
+    private void clean(CheckMarxCollector collector, List<CheckMarxProject> existingProjects) {
+        Set<ObjectId> uniqueIDs = new HashSet<>();
+        for (com.capitalone.dashboard.model.Component comp : dbComponentRepository.findAll()) {
+            if (comp.getCollectorItems() != null && !comp.getCollectorItems().isEmpty()) {
+                List<CollectorItem> itemList = comp.getCollectorItems().get(CollectorType.CheckMarx);
+                if (itemList != null) {
+                    for (CollectorItem ci : itemList) {
+                        if (ci != null && ci.getCollectorId().equals(collector.getId())) {
+                            uniqueIDs.add(ci.getId());
+                        }
+                    }
+                }
+            }
+        }
+        List<CheckMarxProject> stateChangeJobList = new ArrayList<>();
+        Set<ObjectId> udId = new HashSet<>();
+        udId.add(collector.getId());
+        for (CheckMarxProject job : existingProjects) {
+            // collect the jobs that need to change state : enabled vs disabled.
+            if ((job.isEnabled() && !uniqueIDs.contains(job.getId())) ||  // if it was enabled but not on a dashboard
+                    (!job.isEnabled() && uniqueIDs.contains(job.getId()))) { // OR it was disabled and now on a dashboard
+                job.setEnabled(uniqueIDs.contains(job.getId()));
+                stateChangeJobList.add(job);
+            }
+        }
+        if (!CollectionUtils.isEmpty(stateChangeJobList)) {
+            checkMarxProjectRepository.save(stateChangeJobList);
+        }
     }
 }

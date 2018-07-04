@@ -9,5 +9,8 @@
         <module name="checkmarx" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="checkmarx" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,0 +1,35 @@
+2018-06-20 18:02:40,936 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-06-20 18:02:40,941 INFO  c.c.d.collector.CollectorTask - server1
+2018-06-20 18:02:40,941 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-06-20 18:02:40,946 INFO  c.c.d.collector.CollectorTask - Fetched projects   0             0s
+2018-06-20 18:02:40,946 INFO  c.c.d.collector.CollectorTask - New projects            0        0s
+2018-06-20 18:02:40,947 INFO  c.c.d.collector.CollectorTask - Updated                 0        0s
+2018-06-20 18:02:41,279 INFO  c.c.d.collector.CollectorTask - Finished                         0s
+2018-06-20 18:02:41,279 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-06-20 18:02:41,280 INFO  c.c.d.collector.CollectorTask - server2
+2018-06-20 18:02:41,280 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-06-20 18:02:41,281 INFO  c.c.d.collector.CollectorTask - Fetched projects   0             0s
+2018-06-20 18:02:41,281 INFO  c.c.d.collector.CollectorTask - New projects            0        0s
+2018-06-20 18:02:41,281 INFO  c.c.d.collector.CollectorTask - Updated                 0        0s
+2018-06-20 18:02:42,206 INFO  c.c.d.collector.CollectorTask - Finished                         1s
+2018-06-20 18:02:42,218 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-06-20 18:02:42,218 INFO  c.c.d.collector.CollectorTask - server1
+2018-06-20 18:02:42,219 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-06-20 18:02:42,219 INFO  c.c.d.collector.CollectorTask - Fetched projects   0             0s
+2018-06-20 18:02:42,220 INFO  c.c.d.collector.CollectorTask - New projects            0        0s
+2018-06-20 18:02:42,220 INFO  c.c.d.collector.CollectorTask - Updated                 0        0s
+2018-06-20 18:02:42,220 INFO  c.c.d.collector.CollectorTask - Finished                         0s
+2018-06-20 18:02:42,223 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-06-20 18:02:42,223 INFO  c.c.d.collector.CollectorTask - server1
+2018-06-20 18:02:42,223 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-06-20 18:02:42,224 INFO  c.c.d.collector.CollectorTask - Fetched projects   0             0s
+2018-06-20 18:02:42,224 INFO  c.c.d.collector.CollectorTask - New projects            0        0s
+2018-06-20 18:02:42,224 INFO  c.c.d.collector.CollectorTask - Updated                 0        0s
+2018-06-20 18:02:42,225 INFO  c.c.d.collector.CollectorTask - Finished                         0s
+2018-06-20 18:02:42,228 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-06-20 18:02:42,228 INFO  c.c.d.collector.CollectorTask - server1
+2018-06-20 18:02:42,228 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-06-20 18:02:42,229 INFO  c.c.d.collector.CollectorTask - Fetched projects   0             0s
+2018-06-20 18:02:42,229 INFO  c.c.d.collector.CollectorTask - New projects            0        0s
+2018-06-20 18:02:42,229 INFO  c.c.d.collector.CollectorTask - Updated                 0        0s
+2018-06-20 18:02:42,230 INFO  c.c.d.collector.CollectorTask - Finished                         0s

@@ -3,12 +3,27 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/fragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/pom.xml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/Application.java">
+        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/CheckMarxClient.java">
           <value>
             <set />
           </value>
@@ -18,7 +33,22 @@
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/CheckmarxCollectorTask.java">
+        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/CheckMarxSettings.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/CodeSecurity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/DefaultCheckMarxClient.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/SonarCollectorTask.java">
           <value>
             <set />
           </value>
@@ -33,12 +63,132 @@
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/CheckmarxCollector.java">
+        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/CodeSecurity.java">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/repository/CheckmarxCollectorRepository.java">
+        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/QCodeSecurity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/SonarCollector.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/SonarProject.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/repository/CheckMarxProfileRepostory.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/repository/CheckMarxProjectRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/repository/CodeSecurityRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/repository/SonarCollectorRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/repository/SonarProjectRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/banner.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/newbanner.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/com/capitalone/dashboard/collector/SonarCollectorTaskTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../core/src/main/java/com/capitalone/dashboard/model/CollectorType.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/Hygieia/core/src/main/java/com/capitalone/dashboard/model/CollectorType.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/checkmarx/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/checkmarx/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/checkmarx/src/main/java/com/checkmarx/Application.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/checkmarx/src/main/java/com/checkmarx/EntityManager.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/checkmarx/src/main/java/com/checkmarx/checkmarx/Controller/HelloController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/checkmarx/src/main/java/com/checkmarx/checkmarx/collector/CheckMarxCollectorTask.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/checkmarx/src/main/java/com/checkmarx/checkmarx/controller/HelloController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/checkmarx/src/main/java/com/checkmarx/checkmarx/controller/ResponseController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/checkmarx/src/main/java/com/checkmarx/collector/CheckMarxCollectorTask.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/checkmarx/src/main/java/com/checkmarx/collector/CheckMarxSettings.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/checkmarx/src/main/java/com/checkmarx/controller/ResponseController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/checkmarx/src/main/resources/application.properties">
           <value>
             <set />
           </value>
