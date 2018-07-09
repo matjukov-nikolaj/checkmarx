@@ -1,0 +1,246 @@
+2018-07-09 09:40:01,968 INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6379eb: startup date [Mon Jul 09 09:40:01 MSK 2018]; root of context hierarchy
+2018-07-09 09:40:02,197 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 09:40:02,320 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$14a97af0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 09:40:02,995 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at: http://localhost:8888
+2018-07-09 09:40:04,116 WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/application/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2018-07-09 09:40:04,117 INFO  com.capitalone.dashboard.Application - No profiles are active
+2018-07-09 09:40:04,130 INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@291f18: startup date [Mon Jul 09 09:40:04 MSK 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6379eb
+2018-07-09 09:40:05,269 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fb20e13d-da19-31b4-8918-8a3c75acca1c
+2018-07-09 09:40:05,274 INFO  c.u.j.EnableEncryptablePropertySourcesPostProcessor - Post-processing PropertySource instances
+2018-07-09 09:40:05,289 INFO  c.u.j.c.StringEncryptorConfiguration - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing String Encryptor based on properties with name 'jasyptStringEncryptor'
+2018-07-09 09:40:05,295 INFO  c.u.j.EnableEncryptablePropertySourcesPostProcessor - Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018-07-09 09:40:05,296 INFO  c.u.j.EnableEncryptablePropertySourcesPostProcessor - Converting PropertySource systemEnvironment [org.springframework.core.env.SystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+2018-07-09 09:40:05,296 INFO  c.u.j.EnableEncryptablePropertySourcesPostProcessor - Converting PropertySource random [org.springframework.boot.context.config.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2018-07-09 09:40:05,297 INFO  c.u.j.EnableEncryptablePropertySourcesPostProcessor - Converting PropertySource applicationConfig: [file:./application.properties] [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2018-07-09 09:40:05,297 INFO  c.u.j.EnableEncryptablePropertySourcesPostProcessor - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018-07-09 09:40:05,297 INFO  c.u.j.EnableEncryptablePropertySourcesPostProcessor - Converting PropertySource defaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018-07-09 09:40:05,301 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 09:40:05,324 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$14a97af0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 09:40:05,355 INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'taskScheduler'
+2018-07-09 09:40:05,393 INFO  c.c.dashboard.config.MongoConfig - ReplicaSetfalse
+2018-07-09 09:40:05,442 INFO  c.c.dashboard.config.MongoConfig - Initializing Mongo Client server at: 127.0.0.1:27017
+2018-07-09 09:40:05,876 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-07-09 09:40:05,906 INFO  c.c.dashboard.config.MongoConfig - Connecting to Mongo: Mongo{options=MongoClientOptions{description='null', readPreference=primary, writeConcern=WriteConcern{w=1, wtimeout=0, fsync=false, j=false, codecRegistry=org.bson.codecs.configuration.ProvidersCodecRegistry@9c71bcf0, minConnectionsPerHost=0, maxConnectionsPerHost=100, threadsAllowedToBlockForConnectionMultiplier=5, serverSelectionTimeout=30000, maxWaitTime=120000, maxConnectionIdleTime=60000, maxConnectionLifeTime=0, connectTimeout=10000, socketTimeout=0, socketKeepAlive=false, sslEnabled=false, sslInvalidHostNamesAllowed=false, alwaysUseMBeans=false, heartbeatFrequency=10000, minHeartbeatFrequency=500, heartbeatConnectTimeout=20000, heartbeatSocketTimeout=20000, localThreshold=15, requiredReplicaSetName='null', dbDecoderFactory=com.mongodb.DefaultDBDecoder$1@e04ccf8, dbEncoderFactory=com.mongodb.DefaultDBEncoder$1@51d143a1, socketFactory=javax.net.DefaultSocketFactory@1a28aef1, cursorFinalizerEnabled=true, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitQueueSize=500, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=60000, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=20000, readTimeoutMS=20000, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}}}
+2018-07-09 09:40:06,295 INFO  org.mongodb.driver.cluster - No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, all=[ServerDescription{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-07-09 09:40:06,475 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:2}] to 127.0.0.1:27017
+2018-07-09 09:40:06,476 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, electionId=null, maxDocumentSize=16777216, roundTripTimeNanos=675900}
+2018-07-09 09:40:06,508 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3}] to 127.0.0.1:27017
+2018-07-09 09:40:06,760 INFO  c.c.dashboard.config.MongoConfig - ReplicaSetfalse
+2018-07-09 09:40:06,760 INFO  c.c.dashboard.config.MongoConfig - Initializing Mongo Client server at: 127.0.0.1:27017
+2018-07-09 09:40:06,761 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-07-09 09:40:06,761 INFO  c.c.dashboard.config.MongoConfig - Connecting to Mongo: Mongo{options=MongoClientOptions{description='null', readPreference=primary, writeConcern=WriteConcern{w=1, wtimeout=0, fsync=false, j=false, codecRegistry=org.bson.codecs.configuration.ProvidersCodecRegistry@9c71bcf0, minConnectionsPerHost=0, maxConnectionsPerHost=100, threadsAllowedToBlockForConnectionMultiplier=5, serverSelectionTimeout=30000, maxWaitTime=120000, maxConnectionIdleTime=60000, maxConnectionLifeTime=0, connectTimeout=10000, socketTimeout=0, socketKeepAlive=false, sslEnabled=false, sslInvalidHostNamesAllowed=false, alwaysUseMBeans=false, heartbeatFrequency=10000, minHeartbeatFrequency=500, heartbeatConnectTimeout=20000, heartbeatSocketTimeout=20000, localThreshold=15, requiredReplicaSetName='null', dbDecoderFactory=com.mongodb.DefaultDBDecoder$1@e04ccf8, dbEncoderFactory=com.mongodb.DefaultDBEncoder$1@51d143a1, socketFactory=javax.net.DefaultSocketFactory@1a28aef1, cursorFinalizerEnabled=true, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitQueueSize=500, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=60000, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=20000, readTimeoutMS=20000, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}}}
+2018-07-09 09:40:06,770 INFO  c.c.dashboard.config.MongoConfig - ReplicaSetfalse
+2018-07-09 09:40:06,770 INFO  c.c.dashboard.config.MongoConfig - Initializing Mongo Client server at: 127.0.0.1:27017
+2018-07-09 09:40:06,771 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-07-09 09:40:06,772 INFO  c.c.dashboard.config.MongoConfig - Connecting to Mongo: Mongo{options=MongoClientOptions{description='null', readPreference=primary, writeConcern=WriteConcern{w=1, wtimeout=0, fsync=false, j=false, codecRegistry=org.bson.codecs.configuration.ProvidersCodecRegistry@9c71bcf0, minConnectionsPerHost=0, maxConnectionsPerHost=100, threadsAllowedToBlockForConnectionMultiplier=5, serverSelectionTimeout=30000, maxWaitTime=120000, maxConnectionIdleTime=60000, maxConnectionLifeTime=0, connectTimeout=10000, socketTimeout=0, socketKeepAlive=false, sslEnabled=false, sslInvalidHostNamesAllowed=false, alwaysUseMBeans=false, heartbeatFrequency=10000, minHeartbeatFrequency=500, heartbeatConnectTimeout=20000, heartbeatSocketTimeout=20000, localThreshold=15, requiredReplicaSetName='null', dbDecoderFactory=com.mongodb.DefaultDBDecoder$1@e04ccf8, dbEncoderFactory=com.mongodb.DefaultDBEncoder$1@51d143a1, socketFactory=javax.net.DefaultSocketFactory@1a28aef1, cursorFinalizerEnabled=true, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitQueueSize=500, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=60000, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=20000, readTimeoutMS=20000, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}}}
+2018-07-09 09:40:06,790 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:4}] to 127.0.0.1:27017
+2018-07-09 09:40:06,791 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, electionId=null, maxDocumentSize=16777216, roundTripTimeNanos=651800}
+2018-07-09 09:40:06,800 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:5}] to 127.0.0.1:27017
+2018-07-09 09:40:06,801 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, electionId=null, maxDocumentSize=16777216, roundTripTimeNanos=498600}
+2018-07-09 09:40:07,153 INFO  c.c.dashboard.config.MongoConfig - ReplicaSetfalse
+2018-07-09 09:40:07,153 INFO  c.c.dashboard.config.MongoConfig - Initializing Mongo Client server at: 127.0.0.1:27017
+2018-07-09 09:40:07,153 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-07-09 09:40:07,154 INFO  c.c.dashboard.config.MongoConfig - Connecting to Mongo: Mongo{options=MongoClientOptions{description='null', readPreference=primary, writeConcern=WriteConcern{w=1, wtimeout=0, fsync=false, j=false, codecRegistry=org.bson.codecs.configuration.ProvidersCodecRegistry@9c71bcf0, minConnectionsPerHost=0, maxConnectionsPerHost=100, threadsAllowedToBlockForConnectionMultiplier=5, serverSelectionTimeout=30000, maxWaitTime=120000, maxConnectionIdleTime=60000, maxConnectionLifeTime=0, connectTimeout=10000, socketTimeout=0, socketKeepAlive=false, sslEnabled=false, sslInvalidHostNamesAllowed=false, alwaysUseMBeans=false, heartbeatFrequency=10000, minHeartbeatFrequency=500, heartbeatConnectTimeout=20000, heartbeatSocketTimeout=20000, localThreshold=15, requiredReplicaSetName='null', dbDecoderFactory=com.mongodb.DefaultDBDecoder$1@e04ccf8, dbEncoderFactory=com.mongodb.DefaultDBEncoder$1@51d143a1, socketFactory=javax.net.DefaultSocketFactory@1a28aef1, cursorFinalizerEnabled=true, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitQueueSize=500, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=60000, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=20000, readTimeoutMS=20000, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}}}
+2018-07-09 09:40:07,185 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:6}] to 127.0.0.1:27017
+2018-07-09 09:40:07,186 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, electionId=null, maxDocumentSize=16777216, roundTripTimeNanos=561800}
+2018-07-09 09:40:08,236 INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-09 09:40:08,244 INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-07-09 09:40:08,244 INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-07-09 09:40:08,245 INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-07-09 09:40:08,247 INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-07-09 09:40:08,262 INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-07-09 09:40:08,267 INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=291f18,type=ConfigurationPropertiesRebinder]
+2018-07-09 09:40:08,314 INFO  com.capitalone.dashboard.Application - Started Application in 7.699 seconds (JVM running for 9.913)
+2018-07-09 09:41:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-09 09:41:00,075 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 09:41:00,075 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-09 09:41:00,075 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 09:41:00,289 INFO  c.c.d.collector.CollectorTask - Fetched projects   2
+2018-07-09 09:41:00,296 INFO  c.c.d.collector.CollectorTask - New projects       2
+2018-07-09 09:41:00,502 INFO  c.c.d.collector.CollectorTask - Updated            2
+2018-07-09 09:41:00,502 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-09 09:42:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-09 09:42:00,022 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 09:42:00,022 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-09 09:42:00,022 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 09:42:00,141 INFO  c.c.d.collector.CollectorTask - Fetched projects   2
+2018-07-09 09:42:00,142 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-09 09:42:00,294 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-09 09:42:00,295 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-09 09:43:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-09 09:43:00,017 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 09:43:00,017 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-09 09:43:00,017 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 09:43:00,156 INFO  c.c.d.collector.CollectorTask - Fetched projects   2
+2018-07-09 09:43:00,156 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-09 09:43:00,278 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-09 09:43:00,278 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-09 09:44:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-09 09:44:00,017 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 09:44:00,017 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-09 09:44:00,017 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 09:44:00,174 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-09 09:44:00,177 INFO  c.c.d.collector.CollectorTask - New projects       1
+2018-07-09 09:44:00,397 INFO  c.c.d.collector.CollectorTask - Updated            1
+2018-07-09 09:44:00,398 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-09 09:55:58,668 INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@294425a7: startup date [Mon Jul 09 09:55:58 MSK 2018]; root of context hierarchy
+2018-07-09 09:55:58,813 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 09:55:58,876 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e7c94be0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 09:55:59,588 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at: http://localhost:8888
+2018-07-09 09:56:00,657 WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/application/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2018-07-09 09:56:00,659 INFO  com.capitalone.dashboard.Application - No profiles are active
+2018-07-09 09:56:00,677 INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@17d88132: startup date [Mon Jul 09 09:56:00 MSK 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@294425a7
+2018-07-09 09:56:01,987 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fb20e13d-da19-31b4-8918-8a3c75acca1c
+2018-07-09 09:56:01,990 INFO  c.u.j.EnableEncryptablePropertySourcesPostProcessor - Post-processing PropertySource instances
+2018-07-09 09:56:01,997 INFO  c.u.j.c.StringEncryptorConfiguration - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing String Encryptor based on properties with name 'jasyptStringEncryptor'
+2018-07-09 09:56:02,001 INFO  c.u.j.EnableEncryptablePropertySourcesPostProcessor - Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018-07-09 09:56:02,001 INFO  c.u.j.EnableEncryptablePropertySourcesPostProcessor - Converting PropertySource systemEnvironment [org.springframework.core.env.SystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+2018-07-09 09:56:02,002 INFO  c.u.j.EnableEncryptablePropertySourcesPostProcessor - Converting PropertySource random [org.springframework.boot.context.config.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2018-07-09 09:56:02,002 INFO  c.u.j.EnableEncryptablePropertySourcesPostProcessor - Converting PropertySource applicationConfig: [file:./application.properties] [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2018-07-09 09:56:02,002 INFO  c.u.j.EnableEncryptablePropertySourcesPostProcessor - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018-07-09 09:56:02,002 INFO  c.u.j.EnableEncryptablePropertySourcesPostProcessor - Converting PropertySource defaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018-07-09 09:56:02,005 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 09:56:02,023 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e7c94be0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 09:56:02,062 INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'taskScheduler'
+2018-07-09 09:56:02,107 INFO  c.c.dashboard.config.MongoConfig - ReplicaSetfalse
+2018-07-09 09:56:02,141 INFO  c.c.dashboard.config.MongoConfig - Initializing Mongo Client server at: 127.0.0.1:27017
+2018-07-09 09:56:02,584 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-07-09 09:56:02,606 INFO  c.c.dashboard.config.MongoConfig - Connecting to Mongo: Mongo{options=MongoClientOptions{description='null', readPreference=primary, writeConcern=WriteConcern{w=1, wtimeout=0, fsync=false, j=false, codecRegistry=org.bson.codecs.configuration.ProvidersCodecRegistry@7dc4fe21, minConnectionsPerHost=0, maxConnectionsPerHost=100, threadsAllowedToBlockForConnectionMultiplier=5, serverSelectionTimeout=30000, maxWaitTime=120000, maxConnectionIdleTime=60000, maxConnectionLifeTime=0, connectTimeout=10000, socketTimeout=0, socketKeepAlive=false, sslEnabled=false, sslInvalidHostNamesAllowed=false, alwaysUseMBeans=false, heartbeatFrequency=10000, minHeartbeatFrequency=500, heartbeatConnectTimeout=20000, heartbeatSocketTimeout=20000, localThreshold=15, requiredReplicaSetName='null', dbDecoderFactory=com.mongodb.DefaultDBDecoder$1@51d143a1, dbEncoderFactory=com.mongodb.DefaultDBEncoder$1@1a28aef1, socketFactory=javax.net.DefaultSocketFactory@4647881c, cursorFinalizerEnabled=true, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitQueueSize=500, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=60000, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=20000, readTimeoutMS=20000, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}}}
+2018-07-09 09:56:02,928 INFO  org.mongodb.driver.cluster - No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, all=[ServerDescription{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-07-09 09:56:03,046 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:8}] to 127.0.0.1:27017
+2018-07-09 09:56:03,048 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, electionId=null, maxDocumentSize=16777216, roundTripTimeNanos=756500}
+2018-07-09 09:56:03,079 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:9}] to 127.0.0.1:27017
+2018-07-09 09:56:03,321 INFO  c.c.dashboard.config.MongoConfig - ReplicaSetfalse
+2018-07-09 09:56:03,322 INFO  c.c.dashboard.config.MongoConfig - Initializing Mongo Client server at: 127.0.0.1:27017
+2018-07-09 09:56:03,322 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-07-09 09:56:03,323 INFO  c.c.dashboard.config.MongoConfig - Connecting to Mongo: Mongo{options=MongoClientOptions{description='null', readPreference=primary, writeConcern=WriteConcern{w=1, wtimeout=0, fsync=false, j=false, codecRegistry=org.bson.codecs.configuration.ProvidersCodecRegistry@7dc4fe21, minConnectionsPerHost=0, maxConnectionsPerHost=100, threadsAllowedToBlockForConnectionMultiplier=5, serverSelectionTimeout=30000, maxWaitTime=120000, maxConnectionIdleTime=60000, maxConnectionLifeTime=0, connectTimeout=10000, socketTimeout=0, socketKeepAlive=false, sslEnabled=false, sslInvalidHostNamesAllowed=false, alwaysUseMBeans=false, heartbeatFrequency=10000, minHeartbeatFrequency=500, heartbeatConnectTimeout=20000, heartbeatSocketTimeout=20000, localThreshold=15, requiredReplicaSetName='null', dbDecoderFactory=com.mongodb.DefaultDBDecoder$1@51d143a1, dbEncoderFactory=com.mongodb.DefaultDBEncoder$1@1a28aef1, socketFactory=javax.net.DefaultSocketFactory@4647881c, cursorFinalizerEnabled=true, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitQueueSize=500, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=60000, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=20000, readTimeoutMS=20000, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}}}
+2018-07-09 09:56:03,330 INFO  c.c.dashboard.config.MongoConfig - ReplicaSetfalse
+2018-07-09 09:56:03,330 INFO  c.c.dashboard.config.MongoConfig - Initializing Mongo Client server at: 127.0.0.1:27017
+2018-07-09 09:56:03,331 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-07-09 09:56:03,332 INFO  c.c.dashboard.config.MongoConfig - Connecting to Mongo: Mongo{options=MongoClientOptions{description='null', readPreference=primary, writeConcern=WriteConcern{w=1, wtimeout=0, fsync=false, j=false, codecRegistry=org.bson.codecs.configuration.ProvidersCodecRegistry@7dc4fe21, minConnectionsPerHost=0, maxConnectionsPerHost=100, threadsAllowedToBlockForConnectionMultiplier=5, serverSelectionTimeout=30000, maxWaitTime=120000, maxConnectionIdleTime=60000, maxConnectionLifeTime=0, connectTimeout=10000, socketTimeout=0, socketKeepAlive=false, sslEnabled=false, sslInvalidHostNamesAllowed=false, alwaysUseMBeans=false, heartbeatFrequency=10000, minHeartbeatFrequency=500, heartbeatConnectTimeout=20000, heartbeatSocketTimeout=20000, localThreshold=15, requiredReplicaSetName='null', dbDecoderFactory=com.mongodb.DefaultDBDecoder$1@51d143a1, dbEncoderFactory=com.mongodb.DefaultDBEncoder$1@1a28aef1, socketFactory=javax.net.DefaultSocketFactory@4647881c, cursorFinalizerEnabled=true, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitQueueSize=500, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=60000, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=20000, readTimeoutMS=20000, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}}}
+2018-07-09 09:56:03,350 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:10}] to 127.0.0.1:27017
+2018-07-09 09:56:03,351 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, electionId=null, maxDocumentSize=16777216, roundTripTimeNanos=469200}
+2018-07-09 09:56:03,359 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:11}] to 127.0.0.1:27017
+2018-07-09 09:56:03,360 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, electionId=null, maxDocumentSize=16777216, roundTripTimeNanos=682600}
+2018-07-09 09:56:03,703 INFO  c.c.dashboard.config.MongoConfig - ReplicaSetfalse
+2018-07-09 09:56:03,703 INFO  c.c.dashboard.config.MongoConfig - Initializing Mongo Client server at: 127.0.0.1:27017
+2018-07-09 09:56:03,704 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-07-09 09:56:03,704 INFO  c.c.dashboard.config.MongoConfig - Connecting to Mongo: Mongo{options=MongoClientOptions{description='null', readPreference=primary, writeConcern=WriteConcern{w=1, wtimeout=0, fsync=false, j=false, codecRegistry=org.bson.codecs.configuration.ProvidersCodecRegistry@7dc4fe21, minConnectionsPerHost=0, maxConnectionsPerHost=100, threadsAllowedToBlockForConnectionMultiplier=5, serverSelectionTimeout=30000, maxWaitTime=120000, maxConnectionIdleTime=60000, maxConnectionLifeTime=0, connectTimeout=10000, socketTimeout=0, socketKeepAlive=false, sslEnabled=false, sslInvalidHostNamesAllowed=false, alwaysUseMBeans=false, heartbeatFrequency=10000, minHeartbeatFrequency=500, heartbeatConnectTimeout=20000, heartbeatSocketTimeout=20000, localThreshold=15, requiredReplicaSetName='null', dbDecoderFactory=com.mongodb.DefaultDBDecoder$1@51d143a1, dbEncoderFactory=com.mongodb.DefaultDBEncoder$1@1a28aef1, socketFactory=javax.net.DefaultSocketFactory@4647881c, cursorFinalizerEnabled=true, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitQueueSize=500, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=60000, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=20000, readTimeoutMS=20000, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}}}
+2018-07-09 09:56:03,732 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:12}] to 127.0.0.1:27017
+2018-07-09 09:56:03,733 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, electionId=null, maxDocumentSize=16777216, roundTripTimeNanos=567000}
+2018-07-09 09:56:04,741 INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-09 09:56:04,748 INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-07-09 09:56:04,749 INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-07-09 09:56:04,749 INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-07-09 09:56:04,751 INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-07-09 09:56:04,763 INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-07-09 09:56:04,768 INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=17d88132,type=ConfigurationPropertiesRebinder]
+2018-07-09 09:56:04,811 INFO  com.capitalone.dashboard.Application - Started Application in 7.111 seconds (JVM running for 8.574)
+2018-07-09 09:57:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-09 09:57:00,066 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 09:57:00,066 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-09 09:57:00,066 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 09:57:00,276 INFO  c.c.d.collector.CollectorTask - Fetched projects   2
+2018-07-09 09:57:00,291 INFO  c.c.d.collector.CollectorTask - New projects       2
+2018-07-09 09:57:00,517 INFO  c.c.d.collector.CollectorTask - Updated            2
+2018-07-09 09:57:00,517 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-09 09:58:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-09 09:58:00,033 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 09:58:00,033 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-09 09:58:00,033 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 09:58:00,177 INFO  c.c.d.collector.CollectorTask - Fetched projects   2
+2018-07-09 09:58:00,178 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-09 09:58:00,353 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-09 09:58:00,353 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-09 09:59:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-09 09:59:00,017 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 09:59:00,017 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-09 09:59:00,018 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 09:59:00,236 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-09 09:59:00,240 INFO  c.c.d.collector.CollectorTask - New projects       1
+2018-07-09 09:59:00,541 INFO  c.c.d.collector.CollectorTask - Updated            1
+2018-07-09 09:59:00,541 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-09 10:00:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-09 10:00:00,017 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 10:00:00,018 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-09 10:00:00,018 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 10:00:00,173 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-09 10:00:00,175 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-09 10:00:00,428 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-09 10:00:00,428 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-09 10:01:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-09 10:01:00,016 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 10:01:00,016 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-09 10:01:00,016 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 10:01:00,192 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-09 10:01:00,192 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-09 10:01:00,414 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-09 10:01:00,414 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-09 10:02:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-09 10:02:00,019 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 10:02:00,019 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-09 10:02:00,020 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 10:02:00,207 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-09 10:02:00,208 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-09 10:02:00,474 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-09 10:02:00,474 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-09 10:03:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-09 10:03:00,018 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 10:03:00,018 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-09 10:03:00,018 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 10:03:00,176 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-09 10:03:00,176 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-09 10:03:00,363 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-09 10:03:00,363 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-09 10:04:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-09 10:04:00,016 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 10:04:00,016 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-09 10:04:00,016 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 10:04:00,180 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-09 10:04:00,181 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-09 10:04:00,397 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-09 10:04:00,399 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-09 10:05:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-09 10:05:00,017 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 10:05:00,017 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-09 10:05:00,017 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 10:05:00,176 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-09 10:05:00,177 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-09 10:05:00,386 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-09 10:05:00,387 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-09 10:06:00,000 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-09 10:06:00,016 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 10:06:00,016 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-09 10:06:00,016 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 10:06:00,202 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-09 10:06:00,204 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-09 10:06:00,405 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-09 10:06:00,405 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-09 10:07:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-09 10:07:00,018 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 10:07:00,018 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-09 10:07:00,018 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 10:07:00,219 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-09 10:07:00,219 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-09 10:07:00,410 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-09 10:07:00,410 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-09 10:08:00,003 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-09 10:08:00,017 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 10:08:00,018 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-09 10:08:00,018 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 10:08:00,253 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-09 10:08:00,254 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-09 10:08:00,524 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-09 10:08:00,524 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-09 10:09:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-09 10:09:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 10:09:00,014 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-09 10:09:00,014 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 10:09:00,182 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-09 10:09:00,183 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-09 10:09:00,377 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-09 10:09:00,377 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-09 10:10:00,000 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-09 10:10:00,016 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-09 10:10:00,016 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-09 10:10:00,016 INFO  c.c.d.collector.CollectorTask - -----------------------------------

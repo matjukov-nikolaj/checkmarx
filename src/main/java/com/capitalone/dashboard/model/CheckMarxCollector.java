@@ -15,7 +15,7 @@ public class CheckMarxCollector extends Collector {
     public static CheckMarxCollector prototype(List<String> servers) {
         CheckMarxCollector protoType = new CheckMarxCollector();
         protoType.setName("CheckMarx");
-        protoType.setCollectorType(CollectorType.CodeQuality);
+        protoType.setCollectorType(CollectorType.CodeSecurity);
         protoType.setOnline(true);
         protoType.setEnabled(true);
 

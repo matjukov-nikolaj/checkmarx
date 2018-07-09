@@ -13,6 +13,41 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/templates/capone.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/request/CodeSecurityCreateRequest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/request/CodeSecurityRequest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/rest/CodeSecurityController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/service/CodeQualityServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/service/CodeSecurityService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/service/CodeSecurityServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/application.properties">
           <value>
             <set />
@@ -118,12 +153,42 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/com/capitalone/dashboard/collector/CheckMarxCollectorTaskTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/test/java/com/capitalone/dashboard/collector/SonarCollectorTaskTest.java">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/com/capitalone/dashboard/model/CodeSecurityTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../core/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../core/src/main/java/com/capitalone/dashboard/model/CodeSecurity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../core/src/main/java/com/capitalone/dashboard/model/CodeSecurityType.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../core/src/main/java/com/capitalone/dashboard/model/CollectorType.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../core/src/main/java/com/capitalone/dashboard/model/score/CodeSecurityType.java">
           <value>
             <set />
           </value>

@@ -2854,3 +2854,39 @@ Caused by: sun.net.ftp.FtpProtocolException: CWD CheckMarxProjects:
 2018-07-04 16:45:00,021 INFO  c.c.d.collector.CollectorTask - -----------------------------------
 2018-07-04 16:45:00,022 INFO  c.c.d.collector.CollectorTask - ftp://admin:admin@10.0.0.100:21/CheckMarxProjects/
 2018-07-04 16:45:00,022 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-04 16:45:00,221 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-04 16:45:00,223 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-04 16:45:00,424 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-04 16:45:00,424 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-04 16:46:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-04 16:46:00,048 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-04 16:46:00,048 INFO  c.c.d.collector.CollectorTask - ftp://admin:admin@10.0.0.100:21/CheckMarxProjects/
+2018-07-04 16:46:00,048 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-04 16:46:00,217 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-04 16:46:00,217 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-04 16:46:00,414 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-04 16:46:00,414 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-04 16:47:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-04 16:47:00,018 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-04 16:47:00,018 INFO  c.c.d.collector.CollectorTask - ftp://admin:admin@10.0.0.100:21/CheckMarxProjects/
+2018-07-04 16:47:00,018 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-04 16:47:00,271 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-04 16:47:00,273 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-04 16:47:00,535 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-04 16:47:00,536 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-04 16:48:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-04 16:48:00,042 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-04 16:48:00,042 INFO  c.c.d.collector.CollectorTask - ftp://admin:admin@10.0.0.100:21/CheckMarxProjects/
+2018-07-04 16:48:00,042 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-04 16:48:00,256 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-04 16:48:00,256 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-04 16:48:00,606 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-04 16:48:00,606 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-04 16:49:00,003 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-04 16:49:00,040 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-04 16:49:00,040 INFO  c.c.d.collector.CollectorTask - ftp://admin:admin@10.0.0.100:21/CheckMarxProjects/
+2018-07-04 16:49:00,040 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-04 16:49:00,227 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-04 16:49:00,228 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-04 16:49:00,637 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-04 16:49:00,637 INFO  c.c.d.collector.CollectorTask - Finished

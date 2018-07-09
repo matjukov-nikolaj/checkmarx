@@ -2,32 +2,20 @@ package com.capitalone.dashboard.collector;
 
 import com.capitalone.dashboard.model.CheckMarxProject;
 import com.capitalone.dashboard.model.CodeSecurity;
-import com.capitalone.dashboard.util.Supplier;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpEntity;
 import org.springframework.stereotype.Component;
-import org.springframework.web.client.RestOperations;
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-
-import java.net.URLConnection;
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-
 import org.apache.commons.net.ftp.FTPClient;
-import org.apache.commons.net.ftp.FTPFile;
-import org.apache.commons.net.ftp.FTPReply;
-
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
 import java.net.URL;
-import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -40,6 +28,7 @@ public class DefaultCheckMarxClient implements CheckMarxClient {
     private static final String PROJECT_ID = "ProjectId";
     private static final String PROJECT_NAME = "ProjectName";
     private static final String SCAN_START = "ScanStart";
+    private static final String PROTOCOL_SPLITTER = "://";
     private static final String CHECK_MARX_XML_RESULTS_TAG = "CxXMLResults";
     private static final String RESULT_TAG = "Result";
     private static final String ATTRIBUTE_NAME = "Severity";
@@ -51,7 +40,6 @@ public class DefaultCheckMarxClient implements CheckMarxClient {
     private int numberOfLow;
     private int numberOfMedium;
     private int numberOfHigh;
-
     private CheckMarxSettings settings;
 
     @Autowired
@@ -64,7 +52,8 @@ public class DefaultCheckMarxClient implements CheckMarxClient {
     public List<CheckMarxProject> getProjects(String instanceUrl) {
         List<CheckMarxProject> projects = new ArrayList<>();
         try {
-            List<String> projectNames = getProjectsFilesFromFTPClient(instanceUrl);
+            instanceUrl = getUrlWithUserData(instanceUrl);
+            List<String> projectNames = getProjectsNamesFromFTPClient(instanceUrl);
             for (String name : projectNames) {
                 String url = instanceUrl + name;
                 Document document = getDocument(url);
@@ -111,7 +100,7 @@ public class DefaultCheckMarxClient implements CheckMarxClient {
         }
     }
 
-    private List<String> getProjectsFilesFromFTPClient(String instanceUrl) {
+    private List<String> getProjectsNamesFromFTPClient(String instanceUrl) {
         List<String> projectFiles = new ArrayList<>();
         try {
             FTPClient ftpClient = new FTPClient();
@@ -193,6 +182,19 @@ public class DefaultCheckMarxClient implements CheckMarxClient {
             }
         }
         return 0;
+    }
+
+
+    private String getUrlWithUserData(String url) {
+        StringBuilder strBuilderUrl = new StringBuilder(url);
+        String username = settings.getUsername();
+        String password = settings.getPassword();
+        if (!username.isEmpty() && !password.isEmpty()) {
+            int indexOfProtocolEnd = strBuilderUrl.lastIndexOf(PROTOCOL_SPLITTER) + PROTOCOL_SPLITTER.length();
+            String userData = username + ":" + password + "@";
+            strBuilderUrl.insert(indexOfProtocolEnd, userData);
+        }
+        return strBuilderUrl.toString();
     }
 
     private String getProjectId(NodeList cxXMLResultsTag) {

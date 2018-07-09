@@ -5,39 +5,22 @@ import com.capitalone.dashboard.model.CheckMarxProject;
 import com.capitalone.dashboard.model.CheckMarxCollector;
 import com.capitalone.dashboard.model.CodeSecurity;
 import com.capitalone.dashboard.collector.DefaultCheckMarxClient;
-
 import com.capitalone.dashboard.model.CollectorItem;
 import com.capitalone.dashboard.model.CollectorType;
 import com.capitalone.dashboard.repository.*;
-
 import com.capitalone.dashboard.repository.ComponentRepository;
-import com.vividsolutions.jts.util.CollectionUtil;
 
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.bson.types.ObjectId;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.TaskScheduler;
 import org.springframework.stereotype.Component;
-import org.joda.time.DateTime;
-import org.joda.time.format.DateTimeFormat;
-import org.joda.time.format.DateTimeFormatter;
-import org.w3c.dom.Document;
-import org.w3c.dom.NamedNodeMap;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import java.net.URL;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
 @Component
@@ -104,7 +87,7 @@ public class CheckMarxCollectorTask extends CollectorTask<CheckMarxCollector> {
                 log("Fetched projects   " + projects.size());
                 addNewProjects(projects, existingProjects, collector);
 
-                refreshData(enabledProjects(collector, instanceUrl, projects));
+                refreshData(enabledProjects(collector, projects));
                 log("Finished");
             }
         }
@@ -141,7 +124,7 @@ public class CheckMarxCollectorTask extends CollectorTask<CheckMarxCollector> {
         log("Updated            " + count);
     }
 
-    private List<CheckMarxProject> enabledProjects(CheckMarxCollector collector, String instanceUrl, List<CheckMarxProject> projects) {
+    private List<CheckMarxProject> enabledProjects(CheckMarxCollector collector, List<CheckMarxProject> projects) {
         List<CheckMarxProject> enabledProjects = new ArrayList<>();
         CheckMarxProject checkMarxProject;
         for (CheckMarxProject project : projects) {
@@ -170,7 +153,7 @@ public class CheckMarxCollectorTask extends CollectorTask<CheckMarxCollector> {
         Set<ObjectId> uniqueIDs = new HashSet<>();
         for (com.capitalone.dashboard.model.Component comp : dbComponentRepository.findAll()) {
             if (comp.getCollectorItems() != null && !comp.getCollectorItems().isEmpty()) {
-                List<CollectorItem> itemList = comp.getCollectorItems().get(CollectorType.CheckMarx);
+                List<CollectorItem> itemList = comp.getCollectorItems().get(CollectorType.CodeSecurity);
                 if (itemList != null) {
                     for (CollectorItem ci : itemList) {
                         if (ci != null && ci.getCollectorId().equals(collector.getId())) {
