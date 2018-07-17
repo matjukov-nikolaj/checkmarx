@@ -81,6 +81,10 @@ public class CheckMarxCollectorTask extends CollectorTask<CheckMarxCollector> {
         refreshData(enabledProject(collector, project));
     }
 
+    public DefaultCheckMarxClient getCheckMarxClient() {
+        return this.checkMarxClient;
+    }
+
     private boolean isNewProject(CheckMarxProject project, List<CheckMarxProject> existingProjects) {
         return (!existingProjects.contains(project));
     }
@@ -115,24 +119,9 @@ public class CheckMarxCollectorTask extends CollectorTask<CheckMarxCollector> {
      * @param collector the {@link CheckMarxCollector}
      */
 
-    @SuppressWarnings("PMD.AvoidDeeplyNestedIfStmts") // agreed PMD, fixme
+    @SuppressWarnings("PMD.AvoidDeeplyNestedIfStmts")
     private void clean(CheckMarxCollector collector, List<CheckMarxProject> existingProjects) {
-        Set<ObjectId> uniqueIDs = new HashSet<>();
-        for (com.capitalone.dashboard.model.Component comp : dbComponentRepository
-                .findAll()) {
-
-            if (comp.getCollectorItems().isEmpty()) continue;
-
-            List<CollectorItem> itemList = comp.getCollectorItems().get(CollectorType.CheckMarx);
-
-            if (CollectionUtils.isEmpty(itemList)) continue;
-
-            for (CollectorItem ci : itemList) {
-                if (collector.getId().equals(ci.getCollectorId())) {
-                    uniqueIDs.add(ci.getId());
-                }
-            }
-        }
+        Set<ObjectId> uniqueIDs = getUniqueIds(collector);
         List<CheckMarxProject> stateChangeJobList = new ArrayList<>();
         for (CheckMarxProject job : existingProjects) {
             if ((job.isEnabled() && !uniqueIDs.contains(job.getId())) ||  // if it was enabled but not on a dashboard
@@ -144,5 +133,22 @@ public class CheckMarxCollectorTask extends CollectorTask<CheckMarxCollector> {
         if (!CollectionUtils.isEmpty(stateChangeJobList)) {
             checkMarxProjectRepository.save(stateChangeJobList);
         }
+    }
+
+    private Set<ObjectId> getUniqueIds(CheckMarxCollector collector) {
+        Set<ObjectId> uniqueIDs = new HashSet<>();
+        for (com.capitalone.dashboard.model.Component comp : dbComponentRepository
+                .findAll()) {
+            if (comp.getCollectorItems().isEmpty()) continue;
+            List<CollectorItem> itemList = comp.getCollectorItems().get(CollectorType.CheckMarx);
+            if (CollectionUtils.isEmpty(itemList)) continue;
+
+            for (CollectorItem ci : itemList) {
+                if (collector.getId().equals(ci.getCollectorId())) {
+                    uniqueIDs.add(ci.getId());
+                }
+            }
+        }
+        return uniqueIDs;
     }
 }

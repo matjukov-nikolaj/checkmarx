@@ -14,11 +14,14 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.mockito.stubbing.OngoingStubbing;
 import org.springframework.scheduling.TaskScheduler;
 import org.springframework.scheduling.Trigger;
+import org.springframework.scheduling.concurrent.DefaultManagedTaskScheduler;
 
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -27,10 +30,7 @@ import java.util.concurrent.ScheduledFuture;
 
 import static org.junit.Assert.assertThat;
 import static org.hamcrest.Matchers.is;
-
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.verifyZeroInteractions;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 @RunWith(MockitoJUnitRunner.class)
 public class CheckMarxCollectorTaskTest {
@@ -40,28 +40,10 @@ public class CheckMarxCollectorTaskTest {
     @Mock private CheckMarxProjectRepository checkMarxProjectRepository;
     @Mock private CheckMarxRepository checkMarxRepository;
 
-    @Mock private CheckMarxSettings settings;
     @Mock private ComponentRepository dbComponentRepository;
-    @Mock private DefaultCheckMarxClient checkMarxClient;
 
-    private static final String SERVER = "http://192.168.103.97:8081/checkmarx-tests/test1.xml";
+    private static final String SERVER = "checkmarx-tests/test1.xml";
     private static final String CRON = "0 0/1 * * * *";
-    private static final String USERNAME = "admin";
-    private static final String PASSWORD = "admin";
-
-
-    @Before
-    public void init(){
-        settings = new CheckMarxSettings();
-        settings.setCron(CRON);
-        settings.setServer(SERVER);
-        settings.setUsername(USERNAME);
-        settings.setPassword(PASSWORD);
-        checkMarxClient = new DefaultCheckMarxClient(settings);
-//        task = new CheckMarxCollectorTask(TaskScheduler, checkMarxCollectorRepository,
-//                checkMarxProjectRepository, checkMarxRepository,
-//                checkMarxClient, settings, dbComponentRepository);
-    }
 
     @Test
     public void collectEmpty() throws Exception {
@@ -70,50 +52,19 @@ public class CheckMarxCollectorTaskTest {
         verifyZeroInteractions(checkMarxRepository);
     }
 
-    @Test
-    public void collectWithServer() throws Exception {
-        when(dbComponentRepository.findAll()).thenReturn(components());
-        //task.collect(collectorWithServer());
+//    @Test
+//    public void collectWithServer() throws Exception {
+//        when(dbComponentRepository.findAll()).thenReturn(components());
+//        TaskScheduler taskScheduler = new DefaultManagedTaskScheduler();
+//        CheckMarxSettings checkMarxSettings = new CheckMarxSettings();
+//        checkMarxSettings.setCron(CRON);
+//        checkMarxSettings.setServer(getUrlToTestFile());
+//        DefaultCheckMarxClient checkMarxClient = new DefaultCheckMarxClient(checkMarxSettings);
+//        task = new CheckMarxCollectorTask(taskScheduler, checkMarxCollectorRepository,
+//                checkMarxProjectRepository, checkMarxRepository,
+//                checkMarxClient, checkMarxSettings, dbComponentRepository);
+//        task.collect(collectorWithServer());
         //assertThat(task.getCron(), is(CRON));
-    }
-
-//    @Test
-//    public void collectOneServer54() throws Exception {
-//        when(dbComponentRepository.findAll()).thenReturn(components());
-//        when(sonarClientSelector.getSonarClient(VERSION54)).thenReturn(defaultSonar6Client);
-//        task.collect(collectorWithOneServer(VERSION54));
-//        verify(sonarClientSelector).getSonarClient(VERSION54);
-//        verify(defaultSonar6Client).getQualityProfiles(SERVER1);
-//        verify(defaultSonar6Client).retrieveProfileAndProjectAssociation(SERVER1, QUALITYPROFILE);
-//        verify(defaultSonar6Client).getQualityProfileConfigurationChanges(SERVER1, QUALITYPROFILE);
-//    }
-//
-//
-//    @Test
-//    public void collectOneServer63() throws Exception {
-//        when(dbComponentRepository.findAll()).thenReturn(components());
-//        when(sonarClientSelector.getSonarClient(VERSION63)).thenReturn(defaultSonar6Client);
-//        task.collect(collectorWithOneServer(VERSION63));
-//        verify(sonarClientSelector).getSonarClient(VERSION63);
-//        verify(defaultSonar6Client).getQualityProfiles(SERVER1);
-//        verify(defaultSonar6Client).retrieveProfileAndProjectAssociation(SERVER1, QUALITYPROFILE);
-//        verify(defaultSonar6Client).getQualityProfileConfigurationChanges(SERVER1, QUALITYPROFILE);
-//    }
-//
-//
-//    @Test
-//    public void collectTwoServer43And54() throws Exception {
-//        when(dbComponentRepository.findAll()).thenReturn(components());
-//        when(sonarClientSelector.getSonarClient(VERSION54)).thenReturn(defaultSonar6Client);
-//        when(sonarClientSelector.getSonarClient(VERSION43)).thenReturn(defaultSonarClient);
-//        task.collect(collectorWithOnTwoServers(VERSION43, VERSION54));
-//        verify(sonarClientSelector).getSonarClient(VERSION43);
-//        verify(sonarClientSelector).getSonarClient(VERSION54);
-//
-//        verify(defaultSonar6Client).getQualityProfiles(SERVER2);
-//        verify(defaultSonar6Client).retrieveProfileAndProjectAssociation(SERVER2, QUALITYPROFILE);
-//        verify(defaultSonar6Client).getQualityProfileConfigurationChanges(SERVER2, QUALITYPROFILE);
-//
 //    }
 
     private ArrayList<com.capitalone.dashboard.model.Component> components() {
@@ -126,12 +77,12 @@ public class CheckMarxCollectorTaskTest {
         return cArray;
     }
 
-    private String getCron()
-    {
-        return CRON;
+    private String getUrlToTestFile() {
+        ClassLoader classLoader = getClass().getClassLoader();
+        return classLoader.getResource(SERVER).toString();
     }
 
     private CheckMarxCollector collectorWithServer() {
-        return CheckMarxCollector.prototype(SERVER);
+        return CheckMarxCollector.prototype(getUrlToTestFile());
     }
 }

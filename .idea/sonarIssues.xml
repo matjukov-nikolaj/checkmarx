@@ -198,6 +198,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/.idea/.name">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/.idea/workspace.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/application.properties">
           <value>
             <set />
@@ -334,6 +344,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/test/java/com/capitalone/dashboard/collector/SonarCollectorTaskTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/com/capitalone/dashboard/model/CheckMarxTest.java">
           <value>
             <set />
           </value>

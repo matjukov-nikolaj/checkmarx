@@ -46,10 +46,12 @@ public class DefaultCheckMarxClient implements CheckMarxClient {
         try {
             instanceUrl = getUrlWithUserData(instanceUrl);
             Document document = getDocument(instanceUrl);
-            NodeList cxXMLResultsTag = document.getElementsByTagName(CHECK_MARX_XML_RESULTS_TAG);
-            project.setInstanceUrl(instanceUrl);
-            project.setProjectId(getProjectId(cxXMLResultsTag));
-            project.setProjectName(getProjectName(cxXMLResultsTag, getScanStart(document)));
+            if (document != null) {
+                NodeList cxXMLResultsTag = document.getElementsByTagName(CHECK_MARX_XML_RESULTS_TAG);
+                project.setInstanceUrl(instanceUrl);
+                project.setProjectId(getProjectId(cxXMLResultsTag));
+                project.setProjectName(getProjectName(cxXMLResultsTag, getScanStart(document)));
+            }
         } catch (Exception e) {
             LOG.error(e);
         }
@@ -60,6 +62,7 @@ public class DefaultCheckMarxClient implements CheckMarxClient {
     public CheckMarx currentCheckMarxMetrics(CheckMarxProject project) {
         try {
             initializationMetrics();
+            System.out.println(project.getInstanceUrl());
             Document document = getDocument(project.getInstanceUrl());
             parseDocument(document);
             CheckMarx checkMarx = new CheckMarx();
@@ -73,6 +76,10 @@ public class DefaultCheckMarxClient implements CheckMarxClient {
             LOG.error(e);
         }
         return null;
+    }
+
+    public void setSettings(CheckMarxSettings settings) {
+        this.settings = settings;
     }
 
     private void parseDocument(Document document) {

@@ -12,6 +12,7 @@ import org.mockito.runners.MockitoJUnitRunner;
 
 import java.util.Map;
 
+import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static com.sun.org.apache.xerces.internal.util.PropertyState.is;
@@ -23,29 +24,23 @@ public class CheckMarxClientTest {
     private CheckMarxSettings settings;
     private DefaultCheckMarxClient checkMarxClient;
 
-    private static final String SERVER = "http://192.168.103.97:8081/checkmarx-tests/test.xml";
-    private static final String EXPECTED_URL = "http://admin:admin@192.168.103.97:8081/checkmarx-tests/test.xml";
+    private static final String SERVER = "checkmarx-tests/test.xml";
     private static final String EXPECTED_NAME = "test:2018-7-14";
     private static final String EXPECTED_ID = "1";
     private static final String CRON = "0 0/1 * * * *";
-    private static final String USERNAME = "admin";
-    private static final String PASSWORD = "admin";
 
     private static final String LOW = "Low";
     private static final String MEDIUM = "Medium";
     private static final String HIGH = "High";
     private static final String TOTAL = "Total";
 
-
-
-
     @Before
     public void init() {
         settings = new CheckMarxSettings();
         settings.setCron(CRON);
-        settings.setServer(SERVER);
-        settings.setUsername(USERNAME);
-        settings.setPassword(PASSWORD);
+        settings.setServer(getUrlToTestFile(SERVER));
+        settings.setPassword("");
+        settings.setUsername("");
 
         checkMarxClient = new DefaultCheckMarxClient(settings);
     }
@@ -53,7 +48,9 @@ public class CheckMarxClientTest {
     @Test
     public void getProjects() throws Exception {
         CheckMarxProject project = checkMarxClient.getProject(settings.getServer());
-        assertEquals(project, getExpectedCheckMarxProject());
+        CheckMarxProject expectedProject = getExpectedCheckMarxProject();
+        assertEquals(project, expectedProject);
+        assertTrue(project.equals(expectedProject));
     }
 
     @Test
@@ -68,11 +65,16 @@ public class CheckMarxClientTest {
         assertEquals(1531530177000L, checkMarx.getTimestamp());
     }
 
+    private String getUrlToTestFile(String server) {
+        ClassLoader classLoader = getClass().getClassLoader();
+        return classLoader.getResource(server).toString();
+    }
+
     private CheckMarxProject getExpectedCheckMarxProject() {
         CheckMarxProject project = new CheckMarxProject();
         project.setProjectName(EXPECTED_NAME);
         project.setProjectId(EXPECTED_ID);
-        project.setInstanceUrl(EXPECTED_URL);
+        project.setInstanceUrl(getUrlToTestFile(SERVER));
         return project;
     }
 }

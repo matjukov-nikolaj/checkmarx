@@ -155,3 +155,280 @@ Caused by: java.lang.NullPointerException: null
 2018-07-17 09:30:00,035 INFO  c.c.d.collector.CollectorTask - -----------------------------------
 2018-07-17 09:30:00,035 INFO  c.c.d.collector.CollectorTask - Fetched project: RM_Team3:2018-6-29
 2018-07-17 09:30:00,035 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 11:36:54,752 ERROR c.c.d.c.DefaultCheckMarxClient - Could not parse document from: http://admin:admin@192.168.103.97:8081/checkmarx-tests/test1.xml
+java.io.FileNotFoundException: http://admin:admin@192.168.103.97:8081/checkmarx-tests/test1.xml
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1890) ~[na:1.8.0_171]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492) ~[na:1.8.0_171]
+	at java.net.URL.openStream(URL.java:1045) ~[na:1.8.0_171]
+	at com.capitalone.dashboard.collector.DefaultCheckMarxClient.getDocument(DefaultCheckMarxClient.java:139) [classes/:na]
+	at com.capitalone.dashboard.collector.DefaultCheckMarxClient.getProject(DefaultCheckMarxClient.java:48) [classes/:na]
+	at com.capitalone.dashboard.collector.CheckMarxCollectorTask.collect(CheckMarxCollectorTask.java:75) [classes/:na]
+	at com.capitalone.dashboard.collector.CheckMarxCollectorTaskTest.collectWithServer(CheckMarxCollectorTaskTest.java:77) [test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.mockito.internal.runners.JUnit45AndHigherRunnerImpl.run(JUnit45AndHigherRunnerImpl.java:37) [mockito-all-1.10.19.jar:na]
+	at org.mockito.runners.MockitoJUnitRunner.run(MockitoJUnitRunner.java:62) [mockito-all-1.10.19.jar:na]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+2018-07-17 11:36:54,762 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 11:36:54,765 INFO  c.c.d.collector.CollectorTask - Fetched project: null
+2018-07-17 11:36:54,766 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 11:36:54,767 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 11:49:16,748 ERROR c.c.d.c.DefaultCheckMarxClient - Could not parse document from: http://admin:admin@192.168.103.97:8081/checkmarx-tests/test1.xml
+java.io.FileNotFoundException: http://admin:admin@192.168.103.97:8081/checkmarx-tests/test1.xml
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1890) ~[na:1.8.0_171]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492) ~[na:1.8.0_171]
+	at java.net.URL.openStream(URL.java:1045) ~[na:1.8.0_171]
+	at com.capitalone.dashboard.collector.DefaultCheckMarxClient.getDocument(DefaultCheckMarxClient.java:139) [classes/:na]
+	at com.capitalone.dashboard.collector.DefaultCheckMarxClient.getProject(DefaultCheckMarxClient.java:48) [classes/:na]
+	at com.capitalone.dashboard.collector.CheckMarxCollectorTask.collect(CheckMarxCollectorTask.java:75) [classes/:na]
+	at com.capitalone.dashboard.collector.CheckMarxCollectorTaskTest.collectWithServer(CheckMarxCollectorTaskTest.java:77) [test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.mockito.internal.runners.JUnit45AndHigherRunnerImpl.run(JUnit45AndHigherRunnerImpl.java:37) [mockito-all-1.10.19.jar:na]
+	at org.mockito.runners.MockitoJUnitRunner.run(MockitoJUnitRunner.java:62) [mockito-all-1.10.19.jar:na]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+2018-07-17 11:49:16,758 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 11:49:16,760 INFO  c.c.d.collector.CollectorTask - Fetched project: null
+2018-07-17 11:49:16,762 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 11:49:16,763 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 11:50:18,603 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 11:50:18,609 INFO  c.c.d.collector.CollectorTask - Fetched project: RA_Titanium_Phase_2.0_weekly:2018-7-7
+2018-07-17 11:50:18,609 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 11:50:18,611 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 12:01:18,240 ERROR c.c.d.c.DefaultCheckMarxClient - Could not parse document from: ..admin:admin@/../../../../resources/checkmarx-tests/test1.xml
+java.net.MalformedURLException: no protocol: ..admin:admin@/../../../../resources/checkmarx-tests/test1.xml
+	at java.net.URL.<init>(URL.java:593) ~[na:1.8.0_171]
+	at java.net.URL.<init>(URL.java:490) ~[na:1.8.0_171]
+	at java.net.URL.<init>(URL.java:439) ~[na:1.8.0_171]
+	at com.capitalone.dashboard.collector.DefaultCheckMarxClient.getDocument(DefaultCheckMarxClient.java:134) [classes/:na]
+	at com.capitalone.dashboard.collector.DefaultCheckMarxClient.getProject(DefaultCheckMarxClient.java:48) [classes/:na]
+	at com.capitalone.dashboard.collector.CheckMarxCollectorTask.collect(CheckMarxCollectorTask.java:75) [classes/:na]
+	at com.capitalone.dashboard.collector.CheckMarxCollectorTaskTest.collectWithServer(CheckMarxCollectorTaskTest.java:69) [test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.mockito.internal.runners.JUnit45AndHigherRunnerImpl.run(JUnit45AndHigherRunnerImpl.java:37) [mockito-all-1.10.19.jar:na]
+	at org.mockito.runners.MockitoJUnitRunner.run(MockitoJUnitRunner.java:62) [mockito-all-1.10.19.jar:na]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+2018-07-17 12:01:18,251 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 12:01:18,255 INFO  c.c.d.collector.CollectorTask - Fetched project: null
+2018-07-17 12:01:18,260 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 12:01:18,261 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 12:01:58,825 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 12:01:59,261 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 12:01:59,264 INFO  c.c.d.collector.CollectorTask - Fetched project: null
+2018-07-17 12:01:59,265 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 12:01:59,266 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 12:03:38,399 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 12:03:38,404 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 12:03:38,406 INFO  c.c.d.collector.CollectorTask - Fetched project: null
+2018-07-17 12:03:38,408 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 12:03:38,409 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 12:07:54,036 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 12:07:54,041 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 12:07:54,043 INFO  c.c.d.collector.CollectorTask - Fetched project: null
+2018-07-17 12:07:54,045 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 12:07:54,045 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:05:45,536 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:05:45,543 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:05:45,545 INFO  c.c.d.collector.CollectorTask - Fetched project: null
+2018-07-17 14:05:45,546 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:05:45,547 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:06:55,154 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:06:55,158 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:06:55,160 INFO  c.c.d.collector.CollectorTask - Fetched project: null
+2018-07-17 14:06:55,161 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:06:55,162 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:07:50,354 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:07:50,359 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:07:50,361 INFO  c.c.d.collector.CollectorTask - Fetched project: null
+2018-07-17 14:07:50,362 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:07:50,363 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:08:32,146 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:08:32,152 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:08:32,154 INFO  c.c.d.collector.CollectorTask - Fetched project: null
+2018-07-17 14:08:32,155 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:08:32,156 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:08:58,006 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:08:58,012 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:08:58,014 INFO  c.c.d.collector.CollectorTask - Fetched project: null
+2018-07-17 14:08:58,015 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:08:58,016 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:09:33,032 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:09:33,038 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:09:33,039 INFO  c.c.d.collector.CollectorTask - Fetched project: null
+2018-07-17 14:09:33,041 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:09:33,042 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:10:09,328 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:10:09,335 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:10:09,337 INFO  c.c.d.collector.CollectorTask - Fetched project: null
+2018-07-17 14:10:09,338 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:10:09,339 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:10:46,895 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:10:46,899 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:10:46,900 INFO  c.c.d.collector.CollectorTask - Fetched project: null
+2018-07-17 14:10:46,901 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:10:46,902 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:11:53,372 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:11:53,377 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:11:53,379 INFO  c.c.d.collector.CollectorTask - Fetched project: null
+2018-07-17 14:11:53,380 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:11:53,381 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:13:13,402 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:13:13,408 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:13:13,410 INFO  c.c.d.collector.CollectorTask - Fetched project: null
+2018-07-17 14:13:13,412 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:13:13,412 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:15:05,652 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:15:05,657 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:15:05,659 INFO  c.c.d.collector.CollectorTask - Fetched project: null
+2018-07-17 14:15:05,660 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:15:05,661 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:15:48,454 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:15:48,459 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:15:48,461 INFO  c.c.d.collector.CollectorTask - Fetched project: null
+2018-07-17 14:15:48,462 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:15:48,463 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:16:46,125 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:16:46,130 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:16:46,132 INFO  c.c.d.collector.CollectorTask - Fetched project: null
+2018-07-17 14:16:46,134 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:16:46,134 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:17:38,060 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:17:38,067 INFO  c.c.d.collector.CollectorTask - Fetched project: RA_Titanium_Phase_2.0_weekly:2018-7-7
+2018-07-17 14:17:38,068 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:17:38,072 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:25:05,903 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:25:05,908 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:25:05,911 INFO  c.c.d.collector.CollectorTask - Fetched project: null
+2018-07-17 14:25:05,912 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:25:05,913 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:25:42,471 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:25:42,476 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:25:42,477 INFO  c.c.d.collector.CollectorTask - Fetched project: null
+2018-07-17 14:25:42,479 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:25:42,480 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:29:16,381 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:29:16,386 INFO  c.c.d.collector.CollectorTask - Fetched project: RA_Titanium_Phase_2.0_weekly:2018-7-7
+2018-07-17 14:29:16,386 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:29:16,388 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:30:25,716 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:30:25,723 INFO  c.c.d.collector.CollectorTask - Fetched project: RA_Titanium_Phase_2.0_weekly:2018-7-7
+2018-07-17 14:30:25,724 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:30:25,726 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:30:50,578 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:30:50,585 INFO  c.c.d.collector.CollectorTask - Fetched project: RA_Titanium_Phase_2.0_weekly:2018-7-7
+2018-07-17 14:30:50,586 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:30:50,587 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:31:17,524 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:31:17,529 INFO  c.c.d.collector.CollectorTask - Fetched project: RA_Titanium_Phase_2.0_weekly:2018-7-7
+2018-07-17 14:31:17,529 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:31:17,531 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:31:46,810 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:31:46,817 INFO  c.c.d.collector.CollectorTask - Fetched project: RA_Titanium_Phase_2.0_weekly:2018-7-7
+2018-07-17 14:31:46,817 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:31:46,819 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:32:26,906 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:32:26,911 INFO  c.c.d.collector.CollectorTask - Fetched project: RA_Titanium_Phase_2.0_weekly:2018-7-7
+2018-07-17 14:32:26,911 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:32:26,913 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:32:53,932 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:32:53,937 INFO  c.c.d.collector.CollectorTask - Fetched project: RA_Titanium_Phase_2.0_weekly:2018-7-7
+2018-07-17 14:32:53,938 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:32:53,939 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:33:25,487 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:33:25,493 INFO  c.c.d.collector.CollectorTask - Fetched project: RA_Titanium_Phase_2.0_weekly:2018-7-7
+2018-07-17 14:33:25,493 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:33:25,495 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:33:48,306 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:33:48,313 INFO  c.c.d.collector.CollectorTask - Fetched project: RA_Titanium_Phase_2.0_weekly:2018-7-7
+2018-07-17 14:33:48,313 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:33:48,315 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:34:14,801 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:34:14,807 INFO  c.c.d.collector.CollectorTask - Fetched project: RA_Titanium_Phase_2.0_weekly:2018-7-7
+2018-07-17 14:34:14,808 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:34:14,810 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:34:40,444 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:34:40,449 INFO  c.c.d.collector.CollectorTask - Fetched project: RA_Titanium_Phase_2.0_weekly:2018-7-7
+2018-07-17 14:34:40,449 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:34:40,451 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:35:15,034 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:35:15,041 INFO  c.c.d.collector.CollectorTask - Fetched project: RA_Titanium_Phase_2.0_weekly:2018-7-7
+2018-07-17 14:35:15,042 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:35:15,044 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:35:41,195 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:35:41,202 INFO  c.c.d.collector.CollectorTask - Fetched project: RA_Titanium_Phase_2.0_weekly:2018-7-7
+2018-07-17 14:35:41,202 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:35:41,204 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:36:21,394 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:36:21,400 INFO  c.c.d.collector.CollectorTask - Fetched project: RA_Titanium_Phase_2.0_weekly:2018-7-7
+2018-07-17 14:36:21,400 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:36:21,402 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
+2018-07-17 14:37:00,989 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:37:01,009 INFO  c.c.d.collector.CollectorTask - Fetched project: RA_Titanium_Phase_2.0_weekly:2018-7-7
+2018-07-17 14:37:01,010 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-17 14:37:01,016 ERROR c.c.d.c.DefaultCheckMarxClient - java.lang.NullPointerException
