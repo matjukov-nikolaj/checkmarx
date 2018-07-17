@@ -13,7 +13,142 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/app/dashboard/core/data-factories/checkmarx-data.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/app/dashboard/core/data-factories/code-analysis-data.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/app/dashboard/core/data-factories/code-security-data.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/app/dashboard/core/providers/widget-manager.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/app/dashboard/directives/widget.js">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../UI/src/components/templates/capone.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/templates/customTemplate.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/templates/widgetsTemplate.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/widgets/checkmarx/config.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/widgets/checkmarx/config.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/widgets/checkmarx/module.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/widgets/checkmarx/view.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/widgets/checkmarx/view.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/widgets/codeanalysis/config.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/widgets/codeanalysis/module.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/widgets/codeanalysis/view.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/widgets/codesecurity/config.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/widgets/codesecurity/config.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/widgets/codesecurity/module.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/widgets/codesecurity/view.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/widgets/codesecurity/view.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/widgets/codesecurity/view.less">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/widgets/feature/view.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/editors/CaseInsensitiveCheckMarxTypeEditor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/editors/CaseInsensitiveCodeSecurityTypeEditor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/editors/CaseIntensiveCodeSecurityTypeEditor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/request/CheckMarxCreateRequest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/request/CheckMarxRequest.java">
           <value>
             <set />
           </value>
@@ -28,7 +163,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/rest/CheckMarxController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/rest/CodeSecurityController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/service/CheckMarxService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/service/CheckMarxServiceImpl.java">
           <value>
             <set />
           </value>
@@ -88,7 +238,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/CheckMarx.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/CheckMarxCollector.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/CheckMarxMetrics.java">
           <value>
             <set />
           </value>
@@ -99,6 +259,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/CodeSecurity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/QCheckMarx.java">
           <value>
             <set />
           </value>
@@ -128,6 +293,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/repository/CheckMarxRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/repository/CodeSecurityRepository.java">
           <value>
             <set />
@@ -153,6 +323,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/com/capitalone/dashboard/collector/CheckMarxClientTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/test/java/com/capitalone/dashboard/collector/CheckMarxCollectorTaskTest.java">
           <value>
             <set />
@@ -168,7 +343,42 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../sonar/src/main/java/com/capitalone/dashboard/collector/SonarCollectorTask.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sonar/src/main/java/com/capitalone/dashboard/repository/SonarCollectorRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sonar/src/main/java/com/capitalone/dashboard/repository/SonarProjectRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sonar/src/test/java/com/capitalone/dashboard/collector/SonarCollectorTaskTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../core/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../core/src/main/java/com/capitalone/dashboard/model/CheckMarx.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../core/src/main/java/com/capitalone/dashboard/model/CheckMarxType.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../core/src/main/java/com/capitalone/dashboard/model/CodeQualityType.java">
           <value>
             <set />
           </value>
@@ -188,7 +398,32 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../../core/src/main/java/com/capitalone/dashboard/model/Component.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../core/src/main/java/com/capitalone/dashboard/model/score/CodeSecurityType.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../core/src/main/java/com/capitalone/dashboard/repository/CodeQualityRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../core/src/main/java/com/capitalone/dashboard/repository/ComponentRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../core/target/generated-sources/java/com/capitalone/dashboard/model/QCheckMarx.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$MAVEN_REPOSITORY$/com/capitalone/dashboard/core/2.0.5-SNAPSHOT/core-2.0.5-SNAPSHOT.jar!/com/capitalone/dashboard/model/BaseModel.class">
           <value>
             <set />
           </value>

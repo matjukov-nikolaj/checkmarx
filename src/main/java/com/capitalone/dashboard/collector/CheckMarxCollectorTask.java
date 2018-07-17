@@ -1,14 +1,7 @@
 package com.capitalone.dashboard.collector;
 
-
-import com.capitalone.dashboard.model.CheckMarxProject;
-import com.capitalone.dashboard.model.CheckMarxCollector;
-import com.capitalone.dashboard.model.CodeSecurity;
-import com.capitalone.dashboard.collector.DefaultCheckMarxClient;
-import com.capitalone.dashboard.model.CollectorItem;
-import com.capitalone.dashboard.model.CollectorType;
+import com.capitalone.dashboard.model.*;
 import com.capitalone.dashboard.repository.*;
-import com.capitalone.dashboard.repository.ComponentRepository;
 
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.logging.Log;
@@ -30,8 +23,7 @@ public class CheckMarxCollectorTask extends CollectorTask<CheckMarxCollector> {
 
     private final CheckMarxCollectorRepository checkMarxCollectorRepository;
     private final CheckMarxProjectRepository checkMarxProjectRepository;
-    private final CheckMarxProfileRepostory checkMarxProfileRepostory;
-    private final CodeSecurityRepository codeSecurityRepository;
+    private final CheckMarxRepository checkMarxRepository;
     private final DefaultCheckMarxClient checkMarxClient;
     private final CheckMarxSettings checkMarxSettings;
     private final ComponentRepository dbComponentRepository;
@@ -40,16 +32,14 @@ public class CheckMarxCollectorTask extends CollectorTask<CheckMarxCollector> {
     public CheckMarxCollectorTask(TaskScheduler taskScheduler,
                                   CheckMarxCollectorRepository checkMarxCollectorRepository,
                                   CheckMarxProjectRepository checkMarxProjectRepository,
-                                  CheckMarxProfileRepostory checkMarxProfileRepostory,
-                                  CodeSecurityRepository codeSecurityRepository,
+                                  CheckMarxRepository checkMarxRepository,
                                   DefaultCheckMarxClient checkMarxClient,
                                   CheckMarxSettings checkMarxSettings,
                                   ComponentRepository dbComponentRepository) {
         super(taskScheduler, "CheckMarx");
         this.checkMarxCollectorRepository = checkMarxCollectorRepository;
         this.checkMarxProjectRepository = checkMarxProjectRepository;
-        this.checkMarxProfileRepostory = checkMarxProfileRepostory;
-        this.codeSecurityRepository = codeSecurityRepository;
+        this.checkMarxRepository = checkMarxRepository;
         this.checkMarxClient = checkMarxClient;
         this.checkMarxSettings = checkMarxSettings;
         this.dbComponentRepository = dbComponentRepository;
@@ -57,7 +47,7 @@ public class CheckMarxCollectorTask extends CollectorTask<CheckMarxCollector> {
 
     @Override
     public CheckMarxCollector getCollector() {
-        return CheckMarxCollector.prototype(checkMarxSettings.getServers());
+        return CheckMarxCollector.prototype(checkMarxSettings.getServer());
     }
 
     @Override
@@ -72,74 +62,51 @@ public class CheckMarxCollectorTask extends CollectorTask<CheckMarxCollector> {
 
     @Override
     public void collect(CheckMarxCollector collector) {
+        if (collector.getCheckMarxServer().isEmpty()) {
+            return;
+        }
         Set<ObjectId> udId = new HashSet<>();
         udId.add(collector.getId());
         List<CheckMarxProject> existingProjects = checkMarxProjectRepository.findByCollectorIdIn(udId);
         List<CheckMarxProject> latestProjects = new ArrayList<>();
         clean(collector, existingProjects);
-        if (!CollectionUtils.isEmpty(collector.getCheckMarxServers())) {
-            for (int i = 0; i < collector.getCheckMarxServers().size(); ++i) {
-                String instanceUrl = collector.getCheckMarxServers().get(i);
-                logBanner(instanceUrl);
 
-                List<CheckMarxProject> projects = checkMarxClient.getProjects(instanceUrl);
-                latestProjects.addAll(projects);
-                log("Fetched projects   " + projects.size());
-                addNewProjects(projects, existingProjects, collector);
+        String instanceUrl = collector.getCheckMarxServer();
+        CheckMarxProject project = checkMarxClient.getProject(instanceUrl);
+        logBanner("Fetched project: " + project.getProjectName());
+        latestProjects.add(project);
+        if (isNewProject(project, existingProjects)) {
+            addNewProject(project, collector);
+        }
+        refreshData(enabledProject(collector, project));
+    }
 
-                refreshData(enabledProjects(collector, projects));
-                log("Finished");
-            }
+    private boolean isNewProject(CheckMarxProject project, List<CheckMarxProject> existingProjects) {
+        return (!existingProjects.contains(project));
+    }
+
+    private void addNewProject(CheckMarxProject project, CheckMarxCollector collector) {
+        project.setCollectorId(collector.getId());
+        project.setEnabled(false);
+        project.setDescription(project.getProjectName());
+        checkMarxProjectRepository.save(project);
+    }
+
+    private void refreshData(CheckMarxProject project) {
+        CheckMarx checkMarx = checkMarxClient.currentCheckMarxMetrics(project);
+        if (checkMarx != null && isNewCheckMarxData(project, checkMarx)) {
+            checkMarx.setCollectorItemId(project.getId());
+            checkMarxRepository.save(checkMarx);
         }
     }
 
-    private void addNewProjects(List<CheckMarxProject> projects, List<CheckMarxProject> existingProjects, CheckMarxCollector collector) {
-        int count = 0;
-        List<CheckMarxProject> newProjects = new ArrayList<>();
-        for (CheckMarxProject project : projects) {
-            if (!existingProjects.contains(project)) {
-                project.setCollectorId(collector.getId());
-                project.setEnabled(false);
-                project.setDescription(project.getProjectName());
-                newProjects.add(project);
-                count++;
-            }
-        }
-        if (!CollectionUtils.isEmpty(newProjects)) {
-            checkMarxProjectRepository.save(newProjects);
-        }
-        log("New projects       " + count);
+    private CheckMarxProject enabledProject(CheckMarxCollector collector, CheckMarxProject project) {
+        return checkMarxProjectRepository.findCheckMarxProject(collector.getId(), project.getProjectId(), project.getProjectName());
     }
 
-    private void refreshData(List<CheckMarxProject> checkMarxProjects) {
-        int count = 0;
-        for (CheckMarxProject project : checkMarxProjects) {
-            CodeSecurity codeSecurity = checkMarxClient.currentCodeSecurity(project);
-            if (codeSecurity != null && isNewSecurityData(project, codeSecurity)) {
-                codeSecurity.setCollectorItemId(project.getId());
-                codeSecurityRepository.save(codeSecurity);
-                count++;
-            }
-        }
-        log("Updated            " + count);
-    }
-
-    private List<CheckMarxProject> enabledProjects(CheckMarxCollector collector, List<CheckMarxProject> projects) {
-        List<CheckMarxProject> enabledProjects = new ArrayList<>();
-        CheckMarxProject checkMarxProject;
-        for (CheckMarxProject project : projects) {
-            checkMarxProject = checkMarxProjectRepository.findCheckMarxProject(collector.getId(), project.getInstanceUrl(), project.getProjectId());
-            if (!checkMarxProject.equals(null)) {
-                enabledProjects.add(checkMarxProject);
-            }
-        }
-        return enabledProjects.equals(null) ? projects : enabledProjects;
-    }
-
-    private boolean isNewSecurityData(CheckMarxProject project, CodeSecurity codeSecurity) {
-        CodeSecurity kek = codeSecurityRepository.findByCollectorItemIdAndTimestamp(
-                project.getId(), codeSecurity.getTimestamp());
-        return kek == null;
+    private boolean isNewCheckMarxData(CheckMarxProject project, CheckMarx checkMarx) {
+        return checkMarxRepository.findByCollectorItemIdAndTimestamp(
+                project.getId(), checkMarx.getTimestamp()) == null;
     }
 
     /**
@@ -151,23 +118,23 @@ public class CheckMarxCollectorTask extends CollectorTask<CheckMarxCollector> {
     @SuppressWarnings("PMD.AvoidDeeplyNestedIfStmts") // agreed PMD, fixme
     private void clean(CheckMarxCollector collector, List<CheckMarxProject> existingProjects) {
         Set<ObjectId> uniqueIDs = new HashSet<>();
-        for (com.capitalone.dashboard.model.Component comp : dbComponentRepository.findAll()) {
-            if (comp.getCollectorItems() != null && !comp.getCollectorItems().isEmpty()) {
-                List<CollectorItem> itemList = comp.getCollectorItems().get(CollectorType.CodeSecurity);
-                if (itemList != null) {
-                    for (CollectorItem ci : itemList) {
-                        if (ci != null && ci.getCollectorId().equals(collector.getId())) {
-                            uniqueIDs.add(ci.getId());
-                        }
-                    }
+        for (com.capitalone.dashboard.model.Component comp : dbComponentRepository
+                .findAll()) {
+
+            if (comp.getCollectorItems().isEmpty()) continue;
+
+            List<CollectorItem> itemList = comp.getCollectorItems().get(CollectorType.CheckMarx);
+
+            if (CollectionUtils.isEmpty(itemList)) continue;
+
+            for (CollectorItem ci : itemList) {
+                if (collector.getId().equals(ci.getCollectorId())) {
+                    uniqueIDs.add(ci.getId());
                 }
             }
         }
         List<CheckMarxProject> stateChangeJobList = new ArrayList<>();
-        Set<ObjectId> udId = new HashSet<>();
-        udId.add(collector.getId());
         for (CheckMarxProject job : existingProjects) {
-            // collect the jobs that need to change state : enabled vs disabled.
             if ((job.isEnabled() && !uniqueIDs.contains(job.getId())) ||  // if it was enabled but not on a dashboard
                     (!job.isEnabled() && uniqueIDs.contains(job.getId()))) { // OR it was disabled and now on a dashboard
                 job.setEnabled(uniqueIDs.contains(job.getId()));

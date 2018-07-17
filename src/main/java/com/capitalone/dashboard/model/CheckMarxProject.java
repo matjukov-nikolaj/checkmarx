@@ -32,7 +32,9 @@ public class CheckMarxProject extends CollectorItem {
         if (o == null || getClass() != o.getClass()) return false;
 
         CheckMarxProject that = (CheckMarxProject) o;
-        return getProjectId().equals(that.getProjectId()) && getInstanceUrl().equals(that.getInstanceUrl());
+        return getProjectId().equals(that.getProjectId())
+                && getInstanceUrl().equals(that.getInstanceUrl())
+                && getProjectName().equals(that.getProjectName());
     }
 
     @Override

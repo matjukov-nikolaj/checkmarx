@@ -6,21 +6,20 @@ import java.util.List;
 import java.util.Map;
 
 public class CheckMarxCollector extends Collector {
-    private List<String> checkMarxServers = new ArrayList<>();
-
-    public List<String> getCheckMarxServers() {
-        return checkMarxServers;
+    private String checkMarxServer = "";
+    public String getCheckMarxServer() {
+        return checkMarxServer;
     }
 
-    public static CheckMarxCollector prototype(List<String> servers) {
+    public static CheckMarxCollector prototype(String server) {
         CheckMarxCollector protoType = new CheckMarxCollector();
         protoType.setName("CheckMarx");
-        protoType.setCollectorType(CollectorType.CodeSecurity);
+        protoType.setCollectorType(CollectorType.CheckMarx);
         protoType.setOnline(true);
         protoType.setEnabled(true);
 
-        if(servers!=null) {
-            protoType.getCheckMarxServers().addAll(servers);
+        if(server!=null) {
+            protoType.checkMarxServer = server;
         }
 
         Map<String, Object> allOptions = new HashMap<>();

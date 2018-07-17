@@ -5,26 +5,17 @@ import com.capitalone.dashboard.model.BaseModel;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection="code_security")
-public class CodeSecurity extends BaseModel {
+import java.util.Map;
+
+@Document(collection="checkmarx")
+public class CheckMarx extends BaseModel {
     private ObjectId collectorItemId;
     private long timestamp;
 
     private String projectName;
-    private String version;
     private String url;
-    private int numberOfHigh;
-    private int numberOfMedium;
-    private int numberOfLow;
+    private Map<String, Integer> metrics;
     private ObjectId buildId;
-
-    public String getVersion() {
-        return version;
-    }
-
-    public void setVersion(String version) {
-        this.version = version;
-    }
 
     public String getUrl() {
         return url;
@@ -66,27 +57,11 @@ public class CodeSecurity extends BaseModel {
         this.buildId = buildId;
     }
 
-    public int getNumberOfHigh() {
-        return numberOfHigh;
+    public Map<String, Integer> getMetrics() {
+        return metrics;
     }
 
-    public void setNumberOfHigh(int value) {
-        this.numberOfHigh = value;
-    }
-
-    public int getNumberOfMedium() {
-        return numberOfMedium;
-    }
-
-    public void setNumberOfMedium(int value) {
-        this.numberOfMedium = value;
-    }
-
-    public int getNumberOfLow() {
-        return numberOfLow;
-    }
-
-    public void setNumberOfLow(int value) {
-        this.numberOfLow = value;
+    public void setMetrics(Map<String, Integer> metrics) {
+        this.metrics = metrics;
     }
 }

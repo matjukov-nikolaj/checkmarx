@@ -1,30 +1,23 @@
 package com.capitalone.dashboard.collector;
 
+import com.capitalone.dashboard.model.CheckMarx;
 import com.capitalone.dashboard.model.CheckMarxProject;
-import com.capitalone.dashboard.model.CodeSecurity;
-import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.w3c.dom.Document;
-import org.w3c.dom.NamedNodeMap;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
+import org.w3c.dom.*;
+
 import java.text.SimpleDateFormat;
-import org.apache.commons.net.ftp.FTPClient;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
+import java.util.*;
 
 @Component("DefaultCheckMarxClient")
 public class DefaultCheckMarxClient implements CheckMarxClient {
     private static final Log LOG = LogFactory.getLog(DefaultCheckMarxClient.class);
 
-    private static final String XML_EXTENSION = "xml";
     private static final String PROJECT_ID = "ProjectId";
     private static final String PROJECT_NAME = "ProjectName";
     private static final String SCAN_START = "ScanStart";
@@ -36,55 +29,46 @@ public class DefaultCheckMarxClient implements CheckMarxClient {
     private static final String HIGH = "High";
     private static final String MEDIUM = "Medium";
     private static final String LOW = "Low";
+    private static final String TOTAL = "Total";
 
-    private int numberOfLow;
-    private int numberOfMedium;
-    private int numberOfHigh;
+    private Map<String, Integer> metrics = new HashMap<>();
     private CheckMarxSettings settings;
 
     @Autowired
     public DefaultCheckMarxClient(CheckMarxSettings settings) {
         this.settings = settings;
-        this.initializationRiskLevels();
+        this.initializationMetrics();
     }
 
     @Override
-    public List<CheckMarxProject> getProjects(String instanceUrl) {
-        List<CheckMarxProject> projects = new ArrayList<>();
+    public CheckMarxProject getProject(String instanceUrl) {
+        CheckMarxProject project = new CheckMarxProject();
         try {
             instanceUrl = getUrlWithUserData(instanceUrl);
-            List<String> projectNames = getProjectsNamesFromFTPClient(instanceUrl);
-            for (String name : projectNames) {
-                String url = instanceUrl + name;
-                Document document = getDocument(url);
-                NodeList cxXMLResultsTag = document.getElementsByTagName(CHECK_MARX_XML_RESULTS_TAG);
-                CheckMarxProject project = new CheckMarxProject();
-                project.setInstanceUrl(url);
-                project.setProjectId(getProjectId(cxXMLResultsTag));
-                project.setProjectName(getProjectName(cxXMLResultsTag));
-                projects.add(project);
-            }
+            Document document = getDocument(instanceUrl);
+            NodeList cxXMLResultsTag = document.getElementsByTagName(CHECK_MARX_XML_RESULTS_TAG);
+            project.setInstanceUrl(instanceUrl);
+            project.setProjectId(getProjectId(cxXMLResultsTag));
+            project.setProjectName(getProjectName(cxXMLResultsTag, getScanStart(document)));
         } catch (Exception e) {
             LOG.error(e);
         }
-        return projects;
+        return project;
     }
 
-
     @Override
-    public CodeSecurity currentCodeSecurity(CheckMarxProject project) {
+    public CheckMarx currentCheckMarxMetrics(CheckMarxProject project) {
         try {
+            initializationMetrics();
             Document document = getDocument(project.getInstanceUrl());
             parseDocument(document);
-            CodeSecurity codeSecurity = new CodeSecurity();
-            codeSecurity.setNumberOfHigh(numberOfHigh);
-            codeSecurity.setNumberOfMedium(numberOfMedium);
-            codeSecurity.setNumberOfLow(numberOfLow);
-            codeSecurity.setName(project.getProjectName());
-            codeSecurity.setUrl(project.getInstanceUrl());
-            codeSecurity.setTimestamp(getTimeStamp(getScanStart(document)));
-            initializationRiskLevels();
-            return codeSecurity;
+            CheckMarx checkMarx = new CheckMarx();
+            this.metrics.put(TOTAL, this.metrics.get(LOW) + this.metrics.get(MEDIUM) + this.metrics.get(HIGH));
+            checkMarx.setMetrics(metrics);
+            checkMarx.setName(project.getProjectName());
+            checkMarx.setUrl(project.getInstanceUrl());
+            checkMarx.setTimestamp(getTimeStamp(getScanStart(document)));
+            return checkMarx;
         } catch (Exception e) {
             LOG.error(e);
         }
@@ -100,33 +84,6 @@ public class DefaultCheckMarxClient implements CheckMarxClient {
         }
     }
 
-    private List<String> getProjectsNamesFromFTPClient(String instanceUrl) {
-        List<String> projectFiles = new ArrayList<>();
-        try {
-            FTPClient ftpClient = new FTPClient();
-            URL url = new URL(instanceUrl);
-            ftpClient.connect(url.getHost(), url.getPort());
-            ftpClient.login(settings.getUsername(), settings.getPassword());
-            String[] fileNames = ftpClient.listNames(url.getPath());
-            projectFiles.addAll(getXmlFiles(fileNames));
-        } catch (Exception e) {
-            LOG.error(e);
-        }
-        return projectFiles;
-    }
-
-    private List<String> getXmlFiles(String[] fileNames) {
-        List<String> xmlFiles = new ArrayList<>();
-        String fileExtension = "";
-        for (String name : fileNames) {
-            fileExtension = FilenameUtils.getExtension(name);
-            if (fileExtension.equals(XML_EXTENSION)) {
-                xmlFiles.add(name);
-            }
-        }
-        return xmlFiles;
-    }
-
     private void findScanRiskLevels(NodeList nodes) {
         for (int i = 0; i < nodes.getLength(); ++i) {
             Node node = nodes.item(i);
@@ -140,23 +97,28 @@ public class DefaultCheckMarxClient implements CheckMarxClient {
     private void updateScanRiskLevel(String name) {
         switch (name) {
             case HIGH:
-                numberOfHigh++;
+                incrementMetric(HIGH);
                 break;
             case MEDIUM:
-                numberOfMedium++;
+                incrementMetric(MEDIUM);
                 break;
             case LOW:
-                numberOfLow++;
+                incrementMetric(LOW);
                 break;
             default:
                 break;
         }
     }
 
-    private void initializationRiskLevels() {
-        numberOfLow = 0;
-        numberOfMedium = 0;
-        numberOfHigh = 0;
+    private void incrementMetric(String name) {
+        this.metrics.put(name, this.metrics.get(name) + 1);
+    }
+
+    private void initializationMetrics() {
+        this.metrics.put(LOW, 0);
+        this.metrics.put(MEDIUM, 0);
+        this.metrics.put(HIGH, 0);
+        this.metrics.put(TOTAL, 0);
     }
 
     private Document getDocument(String instanceUrl) {
@@ -176,14 +138,24 @@ public class DefaultCheckMarxClient implements CheckMarxClient {
     private long getTimeStamp(String timestamp) {
         if (!timestamp.equals("")) {
             try {
-                return new SimpleDateFormat(DATE_FORMAT, Locale.ENGLISH).parse(timestamp).getTime();
-            } catch (java.text.ParseException e) {
-                LOG.error(timestamp + " is not in expected format " + DATE_FORMAT, e);
+                Date date = getProjectDate(timestamp);
+                return date != null ? date.getTime() : 0;
+            } catch (NullPointerException e) {
+                LOG.error(e);
             }
         }
         return 0;
     }
 
+    private Date getProjectDate(String timestamp)
+    {
+        try {
+            return new SimpleDateFormat(DATE_FORMAT, Locale.ENGLISH).parse(timestamp);
+        } catch (java.text.ParseException e) {
+            LOG.error(timestamp + " is not in expected format " + DATE_FORMAT, e);
+        }
+        return null;
+    }
 
     private String getUrlWithUserData(String url) {
         StringBuilder strBuilderUrl = new StringBuilder(url);
@@ -201,8 +173,19 @@ public class DefaultCheckMarxClient implements CheckMarxClient {
         return getNodeAttributeValue(cxXMLResultsTag, PROJECT_ID);
     }
 
-    private String getProjectName(NodeList cxXMLResultsTag) {
-        return getNodeAttributeValue(cxXMLResultsTag, PROJECT_NAME);
+    private String getProjectName(NodeList cxXMLResultsTag, String scanStart) {
+        String name = getNodeAttributeValue(cxXMLResultsTag, PROJECT_NAME);
+        Date date = getProjectDate(scanStart);
+        if (date == null) {
+            return name;
+        }
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(date);
+        calendar.add(Calendar.MONTH, 1);
+        return name + ":"
+                + calendar.get(Calendar.YEAR) + "-"
+                + calendar.get(Calendar.MONTH) + "-"
+                + calendar.get(Calendar.DAY_OF_MONTH);
     }
 
     private String getScanStart(Document document) {
@@ -214,5 +197,4 @@ public class DefaultCheckMarxClient implements CheckMarxClient {
         Node node = cxXMLResultsTag.item(0);
         return node.getAttributes().getNamedItem(itemName).getNodeValue();
     }
-
 }

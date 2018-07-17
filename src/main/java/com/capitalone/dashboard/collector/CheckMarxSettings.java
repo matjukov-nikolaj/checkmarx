@@ -11,7 +11,7 @@ public class CheckMarxSettings {
     private String cron;
     private String username;
     private String password;
-    private List<String> servers;
+    private String server;
 
     public String getCron() {
         return cron;
@@ -37,11 +37,11 @@ public class CheckMarxSettings {
         this.password = password;
     }
 
-    public List<String> getServers() {
-        return servers;
+    public String getServer() {
+        return server;
     }
 
-    public void setServers(List<String> servers) {
-        this.servers = servers;
+    public void setServer(String server) {
+        this.server = server;
     }
 }

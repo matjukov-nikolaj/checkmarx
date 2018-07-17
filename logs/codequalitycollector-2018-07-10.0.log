@@ -1,0 +1,1488 @@
+2018-07-10 09:43:30,369 INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:6, serverValue:27}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+2018-07-10 09:43:32,439 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 09:43:32,516 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:33}] to 127.0.0.1:27017
+2018-07-10 09:43:32,530 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:43:32,533 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 09:43:32,534 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:43:32,804 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 09:43:32,804 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 09:43:33,170 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 09:43:33,171 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 09:44:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 09:44:00,014 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:44:00,014 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 09:44:00,014 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:44:00,191 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 09:44:00,191 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 09:44:00,406 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 09:44:00,406 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 09:45:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 09:45:00,015 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:45:00,017 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 09:45:00,017 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:45:00,217 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 09:45:00,217 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 09:45:00,432 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 09:45:00,432 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 09:46:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 09:46:00,015 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:46:00,016 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 09:46:00,016 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:46:00,179 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 09:46:00,179 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 09:46:00,417 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 09:46:00,417 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 09:47:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 09:47:00,014 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:47:00,128 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 09:47:00,128 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:47:00,452 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 09:47:00,452 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 09:47:00,884 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 09:47:00,884 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 09:48:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 09:48:00,012 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:48:00,012 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 09:48:00,012 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:48:00,189 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 09:48:00,189 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 09:48:00,395 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 09:48:00,395 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 09:49:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 09:49:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:49:00,014 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 09:49:00,014 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:49:00,216 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 09:49:00,216 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 09:49:00,446 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 09:49:00,446 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 09:50:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 09:50:00,022 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:50:00,022 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 09:50:00,022 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:50:00,296 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 09:50:00,296 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 09:50:00,522 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 09:50:00,523 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 09:51:00,000 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 09:51:00,028 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:51:00,031 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 09:51:00,031 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:51:00,205 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 09:51:00,205 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 09:51:00,370 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 09:51:00,370 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 09:52:00,000 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 09:52:00,033 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:52:00,033 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 09:52:00,033 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:52:00,202 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 09:52:00,202 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 09:52:00,390 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 09:52:00,390 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 09:53:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 09:53:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:53:00,011 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 09:53:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:53:00,171 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 09:53:00,171 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 09:53:00,352 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 09:53:00,352 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 09:54:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 09:54:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:54:00,013 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 09:54:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:54:00,161 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 09:54:00,161 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 09:54:00,340 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 09:54:00,340 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 09:55:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 09:55:00,015 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:55:00,018 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 09:55:00,018 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:55:00,173 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 09:55:00,173 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 09:55:00,337 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 09:55:00,337 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 09:56:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 09:56:00,036 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:56:00,036 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 09:56:00,036 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:56:00,204 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 09:56:00,204 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 09:56:00,371 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 09:56:00,371 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 09:57:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 09:57:00,010 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:57:00,011 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 09:57:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:57:00,178 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 09:57:00,178 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 09:57:00,385 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 09:57:00,385 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 09:58:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 09:58:00,023 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:58:00,023 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 09:58:00,023 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:58:00,199 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 09:58:00,199 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 09:58:00,362 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 09:58:00,362 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 09:59:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 09:59:00,009 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:59:00,010 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 09:59:00,010 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 09:59:00,193 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 09:59:00,193 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 09:59:00,408 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 09:59:00,408 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:00:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:00:00,031 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:00:00,031 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:00:00,031 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:00:00,190 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:00:00,190 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:00:00,374 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:00:00,374 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:01:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:01:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:01:00,012 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:01:00,012 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:01:00,202 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:01:00,202 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:01:00,420 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:01:00,421 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:02:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:02:00,012 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:02:00,012 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:02:00,012 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:02:00,203 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:02:00,203 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:02:00,418 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:02:00,418 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:03:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:03:00,012 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:03:00,015 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:03:00,015 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:03:00,235 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:03:00,236 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:03:00,511 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:03:00,511 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:04:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:04:00,020 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:04:00,020 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:04:00,020 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:04:00,252 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:04:00,252 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:04:00,574 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:04:00,574 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:05:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:05:00,019 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:05:00,028 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:05:00,028 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:05:00,204 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:05:00,204 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:05:00,390 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:05:00,390 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:06:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:06:00,023 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:06:00,023 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:06:00,024 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:06:00,192 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:06:00,192 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:06:00,426 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:06:00,427 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:07:00,003 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:07:00,017 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:07:00,023 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:07:00,023 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:07:00,235 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:07:00,235 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:07:00,498 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:07:00,499 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:08:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:08:00,010 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:08:00,010 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:08:00,010 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:08:00,183 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:08:00,183 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:08:00,386 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:08:00,386 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:09:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:09:00,027 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:09:00,028 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:09:00,028 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:09:00,216 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:09:00,216 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:09:00,495 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:09:00,495 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:10:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:10:00,009 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:10:00,010 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:10:00,010 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:10:00,181 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:10:00,181 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:10:00,364 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:10:00,364 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:11:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:11:00,017 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:11:00,019 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:11:00,019 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:11:00,348 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:11:00,348 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:11:00,636 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:11:00,636 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:12:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:12:00,010 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:12:00,010 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:12:00,010 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:12:00,224 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:12:00,224 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:12:00,486 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:12:00,486 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:13:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:13:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:13:00,014 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:13:00,014 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:13:00,193 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:13:00,193 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:13:00,385 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:13:00,386 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:14:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:14:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:14:00,011 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:14:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:14:00,181 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:14:00,181 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:14:00,386 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:14:00,386 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:15:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:15:00,012 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:15:00,013 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:15:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:15:00,202 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:15:00,203 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:15:00,409 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:15:00,410 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:16:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:16:00,021 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:16:00,021 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:16:00,022 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:16:00,201 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:16:00,201 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:16:00,405 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:16:00,407 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:17:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:17:00,016 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:17:00,017 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:17:00,017 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:17:00,191 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:17:00,191 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:17:00,381 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:17:00,381 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:18:00,000 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:18:00,012 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:18:00,012 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:18:00,012 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:18:00,194 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:18:00,194 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:18:00,427 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:18:00,427 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:19:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:19:00,022 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:19:00,023 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:19:00,023 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:19:00,201 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:19:00,201 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:19:00,422 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:19:00,423 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:20:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:20:00,014 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:20:00,014 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:20:00,014 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:20:00,375 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:20:00,375 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:20:00,771 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:20:00,771 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:21:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:21:00,016 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:21:00,018 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:21:00,018 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:21:00,191 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:21:00,191 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:21:00,377 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:21:00,377 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:22:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:22:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:22:00,013 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:22:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:22:00,196 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:22:00,196 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:22:00,388 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:22:00,388 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:23:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:23:00,010 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:23:00,011 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:23:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:23:00,192 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:23:00,192 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:23:00,414 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:23:00,414 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:24:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:24:00,031 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:24:00,031 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:24:00,031 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:24:00,189 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:24:00,189 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:24:00,424 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:24:00,424 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:25:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:25:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:25:00,013 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:25:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:25:00,198 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:25:00,198 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:25:00,370 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:25:00,370 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:26:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:26:00,020 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:26:00,020 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:26:00,020 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:26:00,341 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:26:00,341 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:26:00,597 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:26:00,598 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:27:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:27:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:27:00,012 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:27:00,012 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:27:00,197 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:27:00,197 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:27:00,392 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:27:00,392 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:28:00,000 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:28:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:28:00,013 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:28:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:28:00,263 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:28:00,263 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:28:00,480 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:28:00,480 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:29:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:29:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:29:00,014 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:29:00,014 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:29:00,206 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:29:00,206 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:29:00,438 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:29:00,438 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:30:00,000 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:30:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:30:00,011 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:30:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:30:00,240 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:30:00,240 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:30:00,483 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:30:00,483 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:31:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:31:00,021 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:31:00,023 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:31:00,023 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:31:00,239 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:31:00,239 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:31:00,605 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:31:00,606 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:32:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:32:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:32:00,011 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:32:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:32:00,160 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:32:00,160 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:32:00,352 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:32:00,353 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:33:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:33:00,010 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:33:00,011 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:33:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:33:00,170 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:33:00,170 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:33:00,366 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:33:00,367 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:34:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:34:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:34:00,013 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:34:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:34:00,168 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:34:00,168 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:34:00,367 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:34:00,367 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:35:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:35:00,016 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:35:00,017 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:35:00,018 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:35:00,202 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:35:00,202 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:35:00,406 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:35:00,406 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:36:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:36:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:36:00,011 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:36:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:36:00,177 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:36:00,177 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:36:00,415 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:36:00,415 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:37:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:37:00,024 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:37:00,026 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:37:00,027 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:37:00,188 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:37:00,188 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:37:00,374 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:37:00,374 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:38:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:38:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:38:00,011 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:38:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:38:00,172 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:38:00,172 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:38:00,358 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:38:00,358 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:39:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:39:00,016 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:39:00,017 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:39:00,017 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:39:00,186 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:39:00,186 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:39:00,356 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:39:00,357 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:40:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:40:00,014 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:40:00,014 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:40:00,014 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:40:00,258 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:40:00,258 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:40:00,468 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:40:00,468 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:41:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:41:00,016 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:41:00,017 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:41:00,017 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:41:00,254 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:41:00,254 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:41:00,669 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:41:00,669 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:42:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:42:00,014 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:42:00,014 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:42:00,014 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:42:00,229 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:42:00,229 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:42:00,634 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:42:00,634 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:43:00,000 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:43:00,010 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:43:00,011 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:43:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:43:00,204 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:43:00,204 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:43:00,389 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:43:00,389 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:44:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:44:00,020 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:44:00,020 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:44:00,020 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:44:00,239 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:44:00,239 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:44:00,486 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:44:00,487 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:45:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:45:00,014 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:45:00,015 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:45:00,015 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:45:00,233 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:45:00,233 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:45:00,502 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:45:00,502 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:46:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:46:00,012 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:46:00,012 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:46:00,012 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:46:00,190 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:46:00,190 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:46:00,441 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:46:00,441 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:47:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:47:00,030 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:47:00,031 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:47:00,031 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:47:00,243 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:47:00,243 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:47:00,573 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:47:00,573 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:48:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:48:00,018 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:48:00,018 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:48:00,018 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:48:00,227 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:48:00,227 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:48:00,470 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:48:00,470 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:49:00,000 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:49:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:49:00,014 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:49:00,014 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:49:00,278 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:49:00,278 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:49:00,563 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:49:00,563 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:50:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:50:00,015 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:50:00,015 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:50:00,015 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:50:00,223 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:50:00,223 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:50:00,462 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:50:00,462 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:51:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:51:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:51:00,014 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:51:00,014 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:51:00,205 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:51:00,205 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:51:00,389 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:51:00,389 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:52:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:52:00,021 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:52:00,021 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:52:00,021 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:52:00,196 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:52:00,196 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:52:00,384 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:52:00,384 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:53:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:53:00,022 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:53:00,023 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:53:00,023 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:53:00,200 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:53:00,200 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:53:00,384 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:53:00,384 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:54:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:54:00,020 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:54:00,020 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:54:00,020 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:54:00,264 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:54:00,264 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:54:00,543 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:54:00,543 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:55:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:55:00,012 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:55:00,013 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:55:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:55:00,270 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:55:00,270 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:55:00,460 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:55:00,460 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:56:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:56:00,014 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:56:00,014 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:56:00,014 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:56:00,244 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:56:00,244 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:56:00,442 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:56:00,442 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:57:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:57:00,012 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:57:00,013 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:57:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:57:00,174 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:57:00,174 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:57:00,373 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:57:00,373 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:58:00,000 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:58:00,025 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:58:00,025 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:58:00,025 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:58:00,223 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:58:00,224 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:58:00,478 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:58:00,478 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 10:59:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 10:59:00,014 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:59:00,015 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 10:59:00,015 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 10:59:00,196 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 10:59:00,196 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 10:59:00,393 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 10:59:00,393 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:00:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:00:00,019 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:00:00,019 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:00:00,019 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:00:00,172 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:00:00,172 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:00:00,349 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:00:00,349 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:01:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:01:00,012 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:01:00,013 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:01:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:01:00,176 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:01:00,176 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:01:00,360 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:01:00,360 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:02:00,000 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:02:00,015 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:02:00,015 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:02:00,015 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:02:00,164 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:02:00,164 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:02:00,339 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:02:00,340 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:03:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:03:00,009 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:03:00,010 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:03:00,010 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:03:00,180 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:03:00,180 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:03:00,348 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:03:00,348 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:04:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:04:00,018 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:04:00,018 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:04:00,018 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:04:00,226 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:04:00,226 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:04:00,449 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:04:00,449 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:05:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:05:00,010 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:05:00,011 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:05:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:05:00,210 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:05:00,210 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:05:00,393 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:05:00,393 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:06:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:06:00,026 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:06:00,026 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:06:00,026 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:06:00,235 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:06:00,235 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:06:01,198 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:06:01,198 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:07:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:07:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:07:00,012 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:07:00,012 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:07:00,172 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:07:00,172 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:07:00,364 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:07:00,365 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:08:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:08:00,019 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:08:00,019 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:08:00,019 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:08:00,193 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:08:00,193 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:08:00,414 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:08:00,414 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:09:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:09:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:09:00,015 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:09:00,015 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:09:00,200 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:09:00,200 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:09:00,388 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:09:00,388 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:10:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:10:00,020 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:10:00,020 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:10:00,020 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:10:00,229 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:10:00,229 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:10:00,527 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:10:00,527 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:11:00,003 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:11:00,026 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:11:00,027 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:11:00,027 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:11:00,187 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:11:00,187 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:11:00,382 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:11:00,382 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:12:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:12:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:12:00,013 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:12:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:12:00,235 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:12:00,235 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:12:00,842 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:12:00,842 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:13:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:13:00,024 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:13:00,026 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:13:00,026 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:13:00,220 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:13:00,220 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:13:00,424 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:13:00,424 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:14:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:14:00,009 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:14:00,009 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:14:00,009 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:14:00,171 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:14:00,172 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:14:00,351 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:14:00,351 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:15:00,000 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:15:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:15:00,012 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:15:00,012 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:15:00,273 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:15:00,273 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:15:00,563 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:15:00,564 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:16:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:16:00,012 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:16:00,013 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:16:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:16:00,232 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:16:00,232 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:16:00,573 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:16:00,574 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:17:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:17:00,010 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:17:00,011 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:17:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:17:00,204 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:17:00,204 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:17:00,542 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:17:00,543 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:18:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:18:00,010 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:18:00,011 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:18:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:18:00,183 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:18:00,183 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:18:00,382 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:18:00,383 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:19:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:19:00,009 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:19:00,010 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:19:00,010 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:19:00,190 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:19:00,190 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:19:00,451 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:19:00,451 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:20:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:20:00,012 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:20:00,012 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:20:00,012 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:20:00,217 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:20:00,217 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:20:00,448 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:20:00,448 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:21:00,003 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:21:00,016 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:21:00,017 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:21:00,017 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:21:00,228 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:21:00,229 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:21:00,494 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:21:00,494 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:22:00,000 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:22:00,017 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:22:00,018 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:22:00,018 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:22:00,234 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:22:00,234 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:22:00,430 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:22:00,430 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:23:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:23:00,012 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:23:00,013 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:23:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:23:00,234 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:23:00,234 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:23:00,499 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:23:00,499 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:24:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:24:00,027 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:24:00,027 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:24:00,027 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:24:00,196 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:24:00,196 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:24:00,408 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:24:00,408 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:25:00,003 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:25:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:25:00,014 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:25:00,014 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:25:00,213 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:25:00,213 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:25:00,410 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:25:00,410 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:26:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:26:00,014 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:26:00,014 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:26:00,014 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:26:00,211 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:26:00,211 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:26:00,726 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:26:00,726 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:27:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:27:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:27:00,013 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:27:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:27:00,226 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:27:00,226 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:27:00,437 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:27:00,437 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:28:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:28:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:28:00,011 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:28:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:28:00,193 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:28:00,194 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:28:00,417 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:28:00,417 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:29:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:29:00,014 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:29:00,015 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:29:00,015 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:29:00,207 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:29:00,207 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:29:00,498 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:29:00,498 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:30:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:30:00,017 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:30:00,017 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:30:00,017 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:30:00,189 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:30:00,190 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:30:00,433 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:30:00,433 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:31:00,000 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:31:00,030 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:31:00,032 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:31:00,032 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:31:00,242 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:31:00,242 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:31:00,436 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:31:00,436 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:32:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:32:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:32:00,011 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:32:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:32:00,221 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:32:00,221 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:32:00,442 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:32:00,442 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:33:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:33:00,021 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:33:00,022 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:33:00,022 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:33:00,219 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:33:00,219 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:33:00,415 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:33:00,415 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:34:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:34:00,012 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:34:00,012 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:34:00,012 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:34:00,178 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:34:00,178 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:34:00,368 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:34:00,369 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:35:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:35:00,028 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:35:00,030 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:35:00,031 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:35:00,222 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:35:00,222 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:35:00,395 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:35:00,395 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:36:00,000 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:36:00,010 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:36:00,010 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:36:00,010 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:36:00,173 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:36:00,173 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:36:00,368 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:36:00,368 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:37:00,003 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:37:00,014 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:37:00,015 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:37:00,015 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:37:00,280 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:37:00,280 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:37:00,483 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:37:00,483 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:38:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:38:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:38:00,013 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:38:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:38:00,206 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:38:00,206 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:38:00,403 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:38:00,403 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:39:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:39:00,012 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:39:00,015 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:39:00,015 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:39:00,195 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:39:00,195 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:39:00,459 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:39:00,459 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:40:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:40:00,015 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:40:00,015 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:40:00,015 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:40:00,254 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:40:00,254 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:40:00,577 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:40:00,578 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:41:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:41:00,014 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:41:00,016 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:41:00,016 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:41:00,250 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:41:00,250 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:41:00,642 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:41:00,642 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:42:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:42:00,010 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:42:00,010 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:42:00,010 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:42:00,172 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:42:00,172 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:42:00,371 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:42:00,371 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:43:00,000 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:43:00,012 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:43:00,014 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:43:00,014 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:43:00,424 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:43:00,424 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:43:00,748 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:43:00,748 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:44:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:44:00,014 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:44:00,015 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:44:00,015 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:44:00,247 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:44:00,247 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:44:00,500 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:44:00,500 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:45:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:45:00,017 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:45:00,020 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:45:00,020 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:45:00,494 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:45:00,494 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:45:01,011 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:45:01,011 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:46:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:46:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:46:00,013 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:46:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:46:00,233 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:46:00,233 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:46:00,429 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:46:00,429 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:47:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:47:00,010 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:47:00,011 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:47:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:47:00,190 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:47:00,190 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:47:00,374 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:47:00,374 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:48:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:48:00,015 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:48:00,015 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:48:00,015 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:48:00,256 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:48:00,256 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:48:00,665 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:48:00,666 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:49:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:49:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:49:00,014 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:49:00,014 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:49:00,201 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:49:00,201 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:49:00,463 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:49:00,463 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:50:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:50:00,010 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:50:00,010 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:50:00,010 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:50:00,204 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:50:00,204 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:50:00,499 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:50:00,500 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:51:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:51:00,020 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:51:00,021 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:51:00,021 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:51:00,210 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:51:00,210 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:51:00,419 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:51:00,419 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:52:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:52:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:52:00,013 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:52:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:52:00,196 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:52:00,196 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:52:00,448 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:52:00,448 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:53:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:53:00,024 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:53:00,025 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:53:00,025 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:53:00,210 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:53:00,210 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:53:00,394 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:53:00,394 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:54:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:54:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:54:00,013 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:54:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:54:00,210 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:54:00,210 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:54:00,379 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:54:00,379 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:55:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:55:00,012 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:55:00,013 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:55:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:55:00,192 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:55:00,193 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:55:00,427 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:55:00,427 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:56:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:56:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:56:00,013 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:56:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:56:00,218 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:56:00,218 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:56:00,478 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:56:00,478 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:57:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:57:00,010 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:57:00,011 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:57:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:57:00,205 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:57:00,205 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:57:00,444 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:57:00,445 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:58:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:58:00,024 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:58:00,024 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:58:00,024 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:58:00,225 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:58:00,225 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:58:00,429 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:58:00,430 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 11:59:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 11:59:00,025 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:59:00,026 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 11:59:00,026 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 11:59:00,200 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 11:59:00,200 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 11:59:00,382 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 11:59:00,382 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 12:00:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 12:00:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:00:00,013 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 12:00:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:00:00,179 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 12:00:00,180 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 12:00:00,442 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 12:00:00,442 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 12:01:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 12:01:00,018 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:01:00,020 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 12:01:00,020 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:01:00,588 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 12:01:00,588 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 12:01:01,083 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 12:01:01,084 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 12:02:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 12:02:00,015 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:02:00,015 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 12:02:00,015 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:02:00,187 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 12:02:00,187 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 12:02:00,372 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 12:02:00,372 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 12:03:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 12:03:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:03:00,027 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 12:03:00,027 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:03:00,311 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 12:03:00,312 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 12:03:00,710 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 12:03:00,710 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 12:04:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 12:04:00,012 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:04:00,013 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 12:04:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:04:00,200 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 12:04:00,200 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 12:04:00,461 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 12:04:00,461 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 12:05:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 12:05:00,018 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:05:00,019 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 12:05:00,019 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:05:00,213 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 12:05:00,213 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 12:05:00,393 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 12:05:00,393 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 12:06:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 12:06:00,015 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:06:00,015 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 12:06:00,015 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:06:00,233 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 12:06:00,233 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 12:06:00,517 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 12:06:00,517 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 12:07:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 12:07:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:07:00,013 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 12:07:00,013 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:07:00,188 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 12:07:00,188 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 12:07:00,400 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 12:07:00,400 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 12:08:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 12:08:00,015 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:08:00,016 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 12:08:00,016 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:08:00,530 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 12:08:00,530 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 12:08:00,932 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 12:08:00,932 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 12:09:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 12:09:00,030 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:09:00,031 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 12:09:00,031 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:09:00,430 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 12:09:00,430 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 12:09:00,726 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 12:09:00,726 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 12:10:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 12:10:00,016 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:10:00,016 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 12:10:00,016 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:10:00,223 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 12:10:00,223 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 12:10:00,413 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 12:10:00,413 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 12:11:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 12:11:00,016 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:11:00,017 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 12:11:00,017 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:11:00,195 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 12:11:00,202 INFO  c.c.d.collector.CollectorTask - New projects       3
+2018-07-10 12:11:00,466 INFO  c.c.d.collector.CollectorTask - Updated            3
+2018-07-10 12:11:00,466 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 12:12:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 12:12:00,009 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:12:00,009 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 12:12:00,009 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:12:00,174 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 12:12:00,176 INFO  c.c.d.collector.CollectorTask - New projects       3
+2018-07-10 12:12:00,371 INFO  c.c.d.collector.CollectorTask - Updated            3
+2018-07-10 12:12:00,371 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 12:13:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 12:13:00,010 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:13:00,011 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 12:13:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:13:00,183 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 12:13:00,183 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 12:13:00,362 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 12:13:00,362 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 12:14:00,000 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 12:14:00,009 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:14:00,009 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 12:14:00,009 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:14:00,203 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 12:14:00,203 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 12:14:00,440 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 12:14:00,440 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 12:15:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 12:15:00,007 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:15:00,008 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 12:15:00,008 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:15:00,204 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 12:15:00,204 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 12:15:00,401 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 12:15:00,401 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 12:16:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 12:16:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:16:00,011 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 12:16:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:16:00,175 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 12:16:00,175 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 12:16:00,357 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 12:16:00,357 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 12:17:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 12:17:00,011 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:17:00,012 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 12:17:00,012 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:17:00,183 INFO  c.c.d.collector.CollectorTask - Fetched projects   3
+2018-07-10 12:17:00,184 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 12:17:00,359 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 12:17:00,359 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 12:17:43,145 INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server 127.0.0.1:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63) ~[mongo-java-driver-3.0.2.jar:na]
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114) ~[mongo-java-driver-3.0.2.jar:na]
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:141) ~[mongo-java-driver-3.0.2.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50) ~[mongo-java-driver-3.0.2.jar:na]
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58) ~[mongo-java-driver-3.0.2.jar:na]
+	... 3 common frames omitted
+2018-07-10 12:17:43,325 INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server 127.0.0.1:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63) ~[mongo-java-driver-3.0.2.jar:na]
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114) ~[mongo-java-driver-3.0.2.jar:na]
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:141) ~[mongo-java-driver-3.0.2.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50) ~[mongo-java-driver-3.0.2.jar:na]
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58) ~[mongo-java-driver-3.0.2.jar:na]
+	... 3 common frames omitted
+2018-07-10 12:17:43,415 INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server 127.0.0.1:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63) ~[mongo-java-driver-3.0.2.jar:na]
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114) ~[mongo-java-driver-3.0.2.jar:na]
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:141) ~[mongo-java-driver-3.0.2.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50) ~[mongo-java-driver-3.0.2.jar:na]
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58) ~[mongo-java-driver-3.0.2.jar:na]
+	... 3 common frames omitted
+2018-07-10 12:17:43,831 INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server 127.0.0.1:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63) ~[mongo-java-driver-3.0.2.jar:na]
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114) ~[mongo-java-driver-3.0.2.jar:na]
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:141) ~[mongo-java-driver-3.0.2.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50) ~[mongo-java-driver-3.0.2.jar:na]
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58) ~[mongo-java-driver-3.0.2.jar:na]
+	... 3 common frames omitted
+2018-07-10 12:17:52,447 INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:7, serverValue:33}] to 127.0.0.1:27017 because there was a socket exception raised on another connection from this pool.
+2018-07-10 12:18:00,001 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 12:18:00,009 INFO  org.mongodb.driver.cluster - No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, all=[ServerDescription{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]}. Waiting for 30000 ms before timing out
+2018-07-10 12:18:30,011 ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task.
+org.springframework.dao.DataAccessResourceFailureException: Timed out after 30000 ms while waiting for a server that matches ReadPreferenceServerSelector{readPreference=primary}. Client view of cluster state is {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting for a server that matches ReadPreferenceServerSelector{readPreference=primary}. Client view of cluster state is {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:75) ~[spring-data-mongodb-1.8.0.RELEASE.jar:na]
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:2013) ~[spring-data-mongodb-1.8.0.RELEASE.jar:na]
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindOneInternal(MongoTemplate.java:1843) ~[spring-data-mongodb-1.8.0.RELEASE.jar:na]
+	at org.springframework.data.mongodb.core.MongoTemplate.doFindOne(MongoTemplate.java:1656) ~[spring-data-mongodb-1.8.0.RELEASE.jar:na]
+	at org.springframework.data.mongodb.core.MongoTemplate.findOne(MongoTemplate.java:564) ~[spring-data-mongodb-1.8.0.RELEASE.jar:na]
+	at org.springframework.data.mongodb.repository.query.AbstractMongoQuery$SingleEntityExecution.execute(AbstractMongoQuery.java:312) ~[spring-data-mongodb-1.8.0.RELEASE.jar:na]
+	at org.springframework.data.mongodb.repository.query.AbstractMongoQuery.execute(AbstractMongoQuery.java:108) ~[spring-data-mongodb-1.8.0.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:454) ~[spring-data-commons-1.11.0.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:432) ~[spring-data-commons-1.11.0.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:61) ~[spring-data-commons-1.11.0.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208) ~[spring-aop-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at com.sun.proxy.$Proxy61.findByName(Unknown Source) ~[na:na]
+	at com.capitalone.dashboard.collector.CollectorTask.run(CollectorTask.java:45) ~[core-2.0.5-SNAPSHOT.jar:na]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_171]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_171]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_171]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+Caused by: com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting for a server that matches ReadPreferenceServerSelector{readPreference=primary}. Client view of cluster state is {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+	at com.mongodb.connection.BaseCluster.createTimeoutException(BaseCluster.java:370) ~[mongo-java-driver-3.0.2.jar:na]
+	at com.mongodb.connection.BaseCluster.selectServer(BaseCluster.java:101) ~[mongo-java-driver-3.0.2.jar:na]
+	at com.mongodb.binding.ClusterBinding$ClusterBindingConnectionSource.<init>(ClusterBinding.java:75) ~[mongo-java-driver-3.0.2.jar:na]
+	at com.mongodb.binding.ClusterBinding$ClusterBindingConnectionSource.<init>(ClusterBinding.java:71) ~[mongo-java-driver-3.0.2.jar:na]
+	at com.mongodb.binding.ClusterBinding.getReadConnectionSource(ClusterBinding.java:63) ~[mongo-java-driver-3.0.2.jar:na]
+	at com.mongodb.operation.OperationHelper.withConnection(OperationHelper.java:166) ~[mongo-java-driver-3.0.2.jar:na]
+	at com.mongodb.operation.FindOperation.execute(FindOperation.java:394) ~[mongo-java-driver-3.0.2.jar:na]
+	at com.mongodb.operation.FindOperation.execute(FindOperation.java:57) ~[mongo-java-driver-3.0.2.jar:na]
+	at com.mongodb.Mongo.execute(Mongo.java:738) ~[mongo-java-driver-3.0.2.jar:na]
+	at com.mongodb.Mongo$2.execute(Mongo.java:725) ~[mongo-java-driver-3.0.2.jar:na]
+	at com.mongodb.DBCollection.findOne(DBCollection.java:737) ~[mongo-java-driver-3.0.2.jar:na]
+	at com.mongodb.DBCollection.findOne(DBCollection.java:710) ~[mongo-java-driver-3.0.2.jar:na]
+	at com.mongodb.DBCollection.findOne(DBCollection.java:657) ~[mongo-java-driver-3.0.2.jar:na]
+	at org.springframework.data.mongodb.core.MongoTemplate$FindOneCallback.doInCollection(MongoTemplate.java:2080) ~[spring-data-mongodb-1.8.0.RELEASE.jar:na]
+	at org.springframework.data.mongodb.core.MongoTemplate$FindOneCallback.doInCollection(MongoTemplate.java:2064) ~[spring-data-mongodb-1.8.0.RELEASE.jar:na]
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindOneInternal(MongoTemplate.java:1839) ~[spring-data-mongodb-1.8.0.RELEASE.jar:na]
+	... 23 common frames omitted
+2018-07-10 12:19:00,000 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 12:19:00,000 INFO  org.mongodb.driver.cluster - No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, all=[ServerDescription{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]}. Waiting for 30000 ms before timing out
+2018-07-10 12:41:09,741 INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@294425a7: startup date [Tue Jul 10 12:41:09 MSK 2018]; root of context hierarchy
+2018-07-10 12:41:09,946 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-10 12:41:10,050 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e7c94be0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-10 12:41:11,838 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at: http://localhost:8888
+2018-07-10 12:41:12,931 WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/application/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2018-07-10 12:41:12,933 INFO  com.capitalone.dashboard.Application - No profiles are active
+2018-07-10 12:41:12,947 INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5ef5c734: startup date [Tue Jul 10 12:41:12 MSK 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@294425a7
+2018-07-10 12:41:15,097 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fb20e13d-da19-31b4-8918-8a3c75acca1c
+2018-07-10 12:41:15,103 INFO  c.u.j.EnableEncryptablePropertySourcesPostProcessor - Post-processing PropertySource instances
+2018-07-10 12:41:15,122 INFO  c.u.j.c.StringEncryptorConfiguration - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing String Encryptor based on properties with name 'jasyptStringEncryptor'
+2018-07-10 12:41:15,131 INFO  c.u.j.EnableEncryptablePropertySourcesPostProcessor - Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018-07-10 12:41:15,131 INFO  c.u.j.EnableEncryptablePropertySourcesPostProcessor - Converting PropertySource systemEnvironment [org.springframework.core.env.SystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+2018-07-10 12:41:15,132 INFO  c.u.j.EnableEncryptablePropertySourcesPostProcessor - Converting PropertySource random [org.springframework.boot.context.config.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2018-07-10 12:41:15,132 INFO  c.u.j.EnableEncryptablePropertySourcesPostProcessor - Converting PropertySource applicationConfig: [file:./application.properties] [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2018-07-10 12:41:15,132 INFO  c.u.j.EnableEncryptablePropertySourcesPostProcessor - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018-07-10 12:41:15,133 INFO  c.u.j.EnableEncryptablePropertySourcesPostProcessor - Converting PropertySource defaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018-07-10 12:41:15,137 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-10 12:41:15,179 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e7c94be0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-10 12:41:15,243 INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'taskScheduler'
+2018-07-10 12:41:15,327 INFO  c.c.dashboard.config.MongoConfig - ReplicaSetfalse
+2018-07-10 12:41:15,588 INFO  c.c.dashboard.config.MongoConfig - Initializing Mongo Client server at: 127.0.0.1:27017
+2018-07-10 12:41:17,181 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-07-10 12:41:17,212 INFO  c.c.dashboard.config.MongoConfig - Connecting to Mongo: Mongo{options=MongoClientOptions{description='null', readPreference=primary, writeConcern=WriteConcern{w=1, wtimeout=0, fsync=false, j=false, codecRegistry=org.bson.codecs.configuration.ProvidersCodecRegistry@681e8f54, minConnectionsPerHost=0, maxConnectionsPerHost=100, threadsAllowedToBlockForConnectionMultiplier=5, serverSelectionTimeout=30000, maxWaitTime=120000, maxConnectionIdleTime=60000, maxConnectionLifeTime=0, connectTimeout=10000, socketTimeout=0, socketKeepAlive=false, sslEnabled=false, sslInvalidHostNamesAllowed=false, alwaysUseMBeans=false, heartbeatFrequency=10000, minHeartbeatFrequency=500, heartbeatConnectTimeout=20000, heartbeatSocketTimeout=20000, localThreshold=15, requiredReplicaSetName='null', dbDecoderFactory=com.mongodb.DefaultDBDecoder$1@359b650b, dbEncoderFactory=com.mongodb.DefaultDBEncoder$1@6a9b0a6f, socketFactory=javax.net.DefaultSocketFactory@10667848, cursorFinalizerEnabled=true, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitQueueSize=500, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=60000, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=20000, readTimeoutMS=20000, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}}}
+2018-07-10 12:41:17,648 INFO  org.mongodb.driver.cluster - No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, all=[ServerDescription{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-07-10 12:41:17,777 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:14}] to 127.0.0.1:27017
+2018-07-10 12:41:17,778 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, electionId=null, maxDocumentSize=16777216, roundTripTimeNanos=501700}
+2018-07-10 12:41:17,807 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:15}] to 127.0.0.1:27017
+2018-07-10 12:41:18,062 INFO  c.c.dashboard.config.MongoConfig - ReplicaSetfalse
+2018-07-10 12:41:18,062 INFO  c.c.dashboard.config.MongoConfig - Initializing Mongo Client server at: 127.0.0.1:27017
+2018-07-10 12:41:18,062 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-07-10 12:41:18,063 INFO  c.c.dashboard.config.MongoConfig - Connecting to Mongo: Mongo{options=MongoClientOptions{description='null', readPreference=primary, writeConcern=WriteConcern{w=1, wtimeout=0, fsync=false, j=false, codecRegistry=org.bson.codecs.configuration.ProvidersCodecRegistry@681e8f54, minConnectionsPerHost=0, maxConnectionsPerHost=100, threadsAllowedToBlockForConnectionMultiplier=5, serverSelectionTimeout=30000, maxWaitTime=120000, maxConnectionIdleTime=60000, maxConnectionLifeTime=0, connectTimeout=10000, socketTimeout=0, socketKeepAlive=false, sslEnabled=false, sslInvalidHostNamesAllowed=false, alwaysUseMBeans=false, heartbeatFrequency=10000, minHeartbeatFrequency=500, heartbeatConnectTimeout=20000, heartbeatSocketTimeout=20000, localThreshold=15, requiredReplicaSetName='null', dbDecoderFactory=com.mongodb.DefaultDBDecoder$1@359b650b, dbEncoderFactory=com.mongodb.DefaultDBEncoder$1@6a9b0a6f, socketFactory=javax.net.DefaultSocketFactory@10667848, cursorFinalizerEnabled=true, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitQueueSize=500, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=60000, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=20000, readTimeoutMS=20000, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}}}
+2018-07-10 12:41:18,089 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:16}] to 127.0.0.1:27017
+2018-07-10 12:41:19,188 INFO  c.c.dashboard.config.MongoConfig - ReplicaSetfalse
+2018-07-10 12:41:19,217 INFO  c.c.dashboard.config.MongoConfig - Initializing Mongo Client server at: 127.0.0.1:27017
+2018-07-10 12:41:19,220 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-07-10 12:41:19,221 INFO  c.c.dashboard.config.MongoConfig - Connecting to Mongo: Mongo{options=MongoClientOptions{description='null', readPreference=primary, writeConcern=WriteConcern{w=1, wtimeout=0, fsync=false, j=false, codecRegistry=org.bson.codecs.configuration.ProvidersCodecRegistry@681e8f54, minConnectionsPerHost=0, maxConnectionsPerHost=100, threadsAllowedToBlockForConnectionMultiplier=5, serverSelectionTimeout=30000, maxWaitTime=120000, maxConnectionIdleTime=60000, maxConnectionLifeTime=0, connectTimeout=10000, socketTimeout=0, socketKeepAlive=false, sslEnabled=false, sslInvalidHostNamesAllowed=false, alwaysUseMBeans=false, heartbeatFrequency=10000, minHeartbeatFrequency=500, heartbeatConnectTimeout=20000, heartbeatSocketTimeout=20000, localThreshold=15, requiredReplicaSetName='null', dbDecoderFactory=com.mongodb.DefaultDBDecoder$1@359b650b, dbEncoderFactory=com.mongodb.DefaultDBEncoder$1@6a9b0a6f, socketFactory=javax.net.DefaultSocketFactory@10667848, cursorFinalizerEnabled=true, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitQueueSize=500, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=60000, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=20000, readTimeoutMS=20000, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}}}
+2018-07-10 12:41:19,227 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, electionId=null, maxDocumentSize=16777216, roundTripTimeNanos=2224600}
+2018-07-10 12:41:19,491 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:17}] to 127.0.0.1:27017
+2018-07-10 12:41:19,495 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, electionId=null, maxDocumentSize=16777216, roundTripTimeNanos=4018900}
+2018-07-10 12:41:20,090 INFO  c.c.dashboard.config.MongoConfig - ReplicaSetfalse
+2018-07-10 12:41:20,090 INFO  c.c.dashboard.config.MongoConfig - Initializing Mongo Client server at: 127.0.0.1:27017
+2018-07-10 12:41:20,091 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-07-10 12:41:20,091 INFO  c.c.dashboard.config.MongoConfig - Connecting to Mongo: Mongo{options=MongoClientOptions{description='null', readPreference=primary, writeConcern=WriteConcern{w=1, wtimeout=0, fsync=false, j=false, codecRegistry=org.bson.codecs.configuration.ProvidersCodecRegistry@681e8f54, minConnectionsPerHost=0, maxConnectionsPerHost=100, threadsAllowedToBlockForConnectionMultiplier=5, serverSelectionTimeout=30000, maxWaitTime=120000, maxConnectionIdleTime=60000, maxConnectionLifeTime=0, connectTimeout=10000, socketTimeout=0, socketKeepAlive=false, sslEnabled=false, sslInvalidHostNamesAllowed=false, alwaysUseMBeans=false, heartbeatFrequency=10000, minHeartbeatFrequency=500, heartbeatConnectTimeout=20000, heartbeatSocketTimeout=20000, localThreshold=15, requiredReplicaSetName='null', dbDecoderFactory=com.mongodb.DefaultDBDecoder$1@359b650b, dbEncoderFactory=com.mongodb.DefaultDBEncoder$1@6a9b0a6f, socketFactory=javax.net.DefaultSocketFactory@10667848, cursorFinalizerEnabled=true, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitQueueSize=500, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=60000, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=20000, readTimeoutMS=20000, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}}}
+2018-07-10 12:41:20,122 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:18}] to 127.0.0.1:27017
+2018-07-10 12:41:20,123 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, electionId=null, maxDocumentSize=16777216, roundTripTimeNanos=494400}
+2018-07-10 12:41:22,380 INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-10 12:41:22,516 INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-07-10 12:41:22,518 INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-07-10 12:41:22,519 INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-07-10 12:41:22,527 INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-07-10 12:41:22,853 INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-07-10 12:41:22,872 INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=5ef5c734,type=ConfigurationPropertiesRebinder]
+2018-07-10 12:41:23,305 INFO  com.capitalone.dashboard.Application - Started Application in 14.644 seconds (JVM running for 17.294)
+2018-07-10 12:42:00,005 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 12:42:00,118 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:42:00,119 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 12:42:00,119 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 12:42:01,174 ERROR c.c.d.c.DefaultCheckMarxClient - java.net.ConnectException: Connection refused: connect
+2018-07-10 12:42:01,175 INFO  c.c.d.collector.CollectorTask - Fetched projects   0
+2018-07-10 12:42:01,176 INFO  c.c.d.collector.CollectorTask - New projects       0
+2018-07-10 12:42:01,176 INFO  c.c.d.collector.CollectorTask - Updated            0
+2018-07-10 12:42:01,176 INFO  c.c.d.collector.CollectorTask - Finished
+2018-07-10 15:57:12,399 INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6379eb: startup date [Tue Jul 10 15:57:12 MSK 2018]; root of context hierarchy
+2018-07-10 15:57:12,565 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-10 15:57:12,646 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$14a97af0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-10 15:57:13,263 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at: http://localhost:8888
+2018-07-10 15:57:14,329 WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/application/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2018-07-10 15:57:14,331 INFO  com.capitalone.dashboard.Application - No profiles are active
+2018-07-10 15:57:14,353 INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@291f18: startup date [Tue Jul 10 15:57:14 MSK 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6379eb
+2018-07-10 15:57:15,286 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fb20e13d-da19-31b4-8918-8a3c75acca1c
+2018-07-10 15:57:15,289 INFO  c.u.j.EnableEncryptablePropertySourcesPostProcessor - Post-processing PropertySource instances
+2018-07-10 15:57:15,297 INFO  c.u.j.c.StringEncryptorConfiguration - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing String Encryptor based on properties with name 'jasyptStringEncryptor'
+2018-07-10 15:57:15,301 INFO  c.u.j.EnableEncryptablePropertySourcesPostProcessor - Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018-07-10 15:57:15,301 INFO  c.u.j.EnableEncryptablePropertySourcesPostProcessor - Converting PropertySource systemEnvironment [org.springframework.core.env.SystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+2018-07-10 15:57:15,301 INFO  c.u.j.EnableEncryptablePropertySourcesPostProcessor - Converting PropertySource random [org.springframework.boot.context.config.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2018-07-10 15:57:15,301 INFO  c.u.j.EnableEncryptablePropertySourcesPostProcessor - Converting PropertySource applicationConfig: [file:./application.properties] [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2018-07-10 15:57:15,301 INFO  c.u.j.EnableEncryptablePropertySourcesPostProcessor - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018-07-10 15:57:15,301 INFO  c.u.j.EnableEncryptablePropertySourcesPostProcessor - Converting PropertySource defaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018-07-10 15:57:15,304 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-10 15:57:15,320 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$14a97af0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-10 15:57:15,343 INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'taskScheduler'
+2018-07-10 15:57:15,376 INFO  c.c.dashboard.config.MongoConfig - ReplicaSetfalse
+2018-07-10 15:57:15,410 INFO  c.c.dashboard.config.MongoConfig - Initializing Mongo Client server at: 127.0.0.1:27017
+2018-07-10 15:57:15,841 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-07-10 15:57:15,866 INFO  c.c.dashboard.config.MongoConfig - Connecting to Mongo: Mongo{options=MongoClientOptions{description='null', readPreference=primary, writeConcern=WriteConcern{w=1, wtimeout=0, fsync=false, j=false, codecRegistry=org.bson.codecs.configuration.ProvidersCodecRegistry@2d1e8604, minConnectionsPerHost=0, maxConnectionsPerHost=100, threadsAllowedToBlockForConnectionMultiplier=5, serverSelectionTimeout=30000, maxWaitTime=120000, maxConnectionIdleTime=60000, maxConnectionLifeTime=0, connectTimeout=10000, socketTimeout=0, socketKeepAlive=false, sslEnabled=false, sslInvalidHostNamesAllowed=false, alwaysUseMBeans=false, heartbeatFrequency=10000, minHeartbeatFrequency=500, heartbeatConnectTimeout=20000, heartbeatSocketTimeout=20000, localThreshold=15, requiredReplicaSetName='null', dbDecoderFactory=com.mongodb.DefaultDBDecoder$1@1a28aef1, dbEncoderFactory=com.mongodb.DefaultDBEncoder$1@4647881c, socketFactory=javax.net.DefaultSocketFactory@6e0cff20, cursorFinalizerEnabled=true, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitQueueSize=500, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=60000, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=20000, readTimeoutMS=20000, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}}}
+2018-07-10 15:57:16,216 INFO  org.mongodb.driver.cluster - No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, all=[ServerDescription{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-07-10 15:57:16,345 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:103}] to 127.0.0.1:27017
+2018-07-10 15:57:16,346 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, electionId=null, maxDocumentSize=16777216, roundTripTimeNanos=604800}
+2018-07-10 15:57:16,378 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:104}] to 127.0.0.1:27017
+2018-07-10 15:57:16,607 INFO  c.c.dashboard.config.MongoConfig - ReplicaSetfalse
+2018-07-10 15:57:16,608 INFO  c.c.dashboard.config.MongoConfig - Initializing Mongo Client server at: 127.0.0.1:27017
+2018-07-10 15:57:16,608 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-07-10 15:57:16,612 INFO  c.c.dashboard.config.MongoConfig - Connecting to Mongo: Mongo{options=MongoClientOptions{description='null', readPreference=primary, writeConcern=WriteConcern{w=1, wtimeout=0, fsync=false, j=false, codecRegistry=org.bson.codecs.configuration.ProvidersCodecRegistry@2d1e8604, minConnectionsPerHost=0, maxConnectionsPerHost=100, threadsAllowedToBlockForConnectionMultiplier=5, serverSelectionTimeout=30000, maxWaitTime=120000, maxConnectionIdleTime=60000, maxConnectionLifeTime=0, connectTimeout=10000, socketTimeout=0, socketKeepAlive=false, sslEnabled=false, sslInvalidHostNamesAllowed=false, alwaysUseMBeans=false, heartbeatFrequency=10000, minHeartbeatFrequency=500, heartbeatConnectTimeout=20000, heartbeatSocketTimeout=20000, localThreshold=15, requiredReplicaSetName='null', dbDecoderFactory=com.mongodb.DefaultDBDecoder$1@1a28aef1, dbEncoderFactory=com.mongodb.DefaultDBEncoder$1@4647881c, socketFactory=javax.net.DefaultSocketFactory@6e0cff20, cursorFinalizerEnabled=true, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitQueueSize=500, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=60000, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=20000, readTimeoutMS=20000, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}}}
+2018-07-10 15:57:16,620 INFO  c.c.dashboard.config.MongoConfig - ReplicaSetfalse
+2018-07-10 15:57:16,620 INFO  c.c.dashboard.config.MongoConfig - Initializing Mongo Client server at: 127.0.0.1:27017
+2018-07-10 15:57:16,621 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-07-10 15:57:16,622 INFO  c.c.dashboard.config.MongoConfig - Connecting to Mongo: Mongo{options=MongoClientOptions{description='null', readPreference=primary, writeConcern=WriteConcern{w=1, wtimeout=0, fsync=false, j=false, codecRegistry=org.bson.codecs.configuration.ProvidersCodecRegistry@2d1e8604, minConnectionsPerHost=0, maxConnectionsPerHost=100, threadsAllowedToBlockForConnectionMultiplier=5, serverSelectionTimeout=30000, maxWaitTime=120000, maxConnectionIdleTime=60000, maxConnectionLifeTime=0, connectTimeout=10000, socketTimeout=0, socketKeepAlive=false, sslEnabled=false, sslInvalidHostNamesAllowed=false, alwaysUseMBeans=false, heartbeatFrequency=10000, minHeartbeatFrequency=500, heartbeatConnectTimeout=20000, heartbeatSocketTimeout=20000, localThreshold=15, requiredReplicaSetName='null', dbDecoderFactory=com.mongodb.DefaultDBDecoder$1@1a28aef1, dbEncoderFactory=com.mongodb.DefaultDBEncoder$1@4647881c, socketFactory=javax.net.DefaultSocketFactory@6e0cff20, cursorFinalizerEnabled=true, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitQueueSize=500, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=60000, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=20000, readTimeoutMS=20000, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}}}
+2018-07-10 15:57:16,645 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:105}] to 127.0.0.1:27017
+2018-07-10 15:57:16,645 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, electionId=null, maxDocumentSize=16777216, roundTripTimeNanos=536300}
+2018-07-10 15:57:16,652 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:106}] to 127.0.0.1:27017
+2018-07-10 15:57:16,653 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, electionId=null, maxDocumentSize=16777216, roundTripTimeNanos=777100}
+2018-07-10 15:57:17,004 INFO  c.c.dashboard.config.MongoConfig - ReplicaSetfalse
+2018-07-10 15:57:17,004 INFO  c.c.dashboard.config.MongoConfig - Initializing Mongo Client server at: 127.0.0.1:27017
+2018-07-10 15:57:17,005 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-07-10 15:57:17,005 INFO  c.c.dashboard.config.MongoConfig - Connecting to Mongo: Mongo{options=MongoClientOptions{description='null', readPreference=primary, writeConcern=WriteConcern{w=1, wtimeout=0, fsync=false, j=false, codecRegistry=org.bson.codecs.configuration.ProvidersCodecRegistry@2d1e8604, minConnectionsPerHost=0, maxConnectionsPerHost=100, threadsAllowedToBlockForConnectionMultiplier=5, serverSelectionTimeout=30000, maxWaitTime=120000, maxConnectionIdleTime=60000, maxConnectionLifeTime=0, connectTimeout=10000, socketTimeout=0, socketKeepAlive=false, sslEnabled=false, sslInvalidHostNamesAllowed=false, alwaysUseMBeans=false, heartbeatFrequency=10000, minHeartbeatFrequency=500, heartbeatConnectTimeout=20000, heartbeatSocketTimeout=20000, localThreshold=15, requiredReplicaSetName='null', dbDecoderFactory=com.mongodb.DefaultDBDecoder$1@1a28aef1, dbEncoderFactory=com.mongodb.DefaultDBEncoder$1@4647881c, socketFactory=javax.net.DefaultSocketFactory@6e0cff20, cursorFinalizerEnabled=true, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitQueueSize=500, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=60000, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=20000, readTimeoutMS=20000, keepAlive=false, receiveBufferSize=0, sendBufferSize=0}}}
+2018-07-10 15:57:17,033 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:107}] to 127.0.0.1:27017
+2018-07-10 15:57:17,034 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, electionId=null, maxDocumentSize=16777216, roundTripTimeNanos=663300}
+2018-07-10 15:57:18,086 INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-10 15:57:18,093 INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-07-10 15:57:18,094 INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-07-10 15:57:18,095 INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-07-10 15:57:18,096 INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-07-10 15:57:18,108 INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-07-10 15:57:18,114 INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=291f18,type=ConfigurationPropertiesRebinder]
+2018-07-10 15:57:18,159 INFO  com.capitalone.dashboard.Application - Started Application in 7.196 seconds (JVM running for 8.677)
+2018-07-10 15:58:00,002 INFO  c.c.d.collector.CollectorTask - Running Collector: CheckMarx
+2018-07-10 15:58:00,068 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 15:58:00,068 INFO  c.c.d.collector.CollectorTask - ftp://10.0.0.100:21/CheckMarxProjects/
+2018-07-10 15:58:00,068 INFO  c.c.d.collector.CollectorTask - -----------------------------------
+2018-07-10 15:58:00,178 INFO  c.c.d.collector.CollectorTask - Fetched projects   1
+2018-07-10 15:58:00,183 INFO  c.c.d.collector.CollectorTask - New projects       1
+2018-07-10 15:58:00,245 INFO  c.c.d.collector.CollectorTask - Updated            1
+2018-07-10 15:58:00,245 INFO  c.c.d.collector.CollectorTask - Finished
