@@ -31,58 +31,63 @@ public class DefaultCheckMarxClient implements CheckMarxClient {
     private static final String LOW = "Low";
     private static final String TOTAL = "Total";
 
+    private CheckMarx checkMarx;
+    private CheckMarxProject project;
     private Map<String, Integer> metrics = new HashMap<>();
     private CheckMarxSettings settings;
 
     @Autowired
     public DefaultCheckMarxClient(CheckMarxSettings settings) {
         this.settings = settings;
-        this.initializationMetrics();
     }
 
     @Override
-    public CheckMarxProject getProject(String instanceUrl) {
-        CheckMarxProject project = new CheckMarxProject();
+    public CheckMarxProject getProject() {
+        return this.project;
+    }
+
+    @Override
+    public CheckMarx getCurrentMetrics(CheckMarxProject project) {
+        this.metrics.put(TOTAL, this.metrics.get(LOW) + this.metrics.get(MEDIUM) + this.metrics.get(HIGH));
+        this.checkMarx.setMetrics(metrics);
+        this.checkMarx.setName(project.getProjectName());
+        this.checkMarx.setUrl(project.getInstanceUrl());
+        return checkMarx;
+    }
+
+    @Override
+    public void parseDocument(String instanceUrl) {
         try {
+            this.initializationFields();
             instanceUrl = getUrlWithUserData(instanceUrl);
             Document document = getDocument(instanceUrl);
             if (document != null) {
-                NodeList cxXMLResultsTag = document.getElementsByTagName(CHECK_MARX_XML_RESULTS_TAG);
-                project.setInstanceUrl(instanceUrl);
-                project.setProjectId(getProjectId(cxXMLResultsTag));
-                project.setProjectName(getProjectName(cxXMLResultsTag, getScanStart(document)));
+                parseCheckMarxDocument(document);
+                this.project.setInstanceUrl(instanceUrl);
             }
         } catch (Exception e) {
             LOG.error(e);
         }
-        return project;
     }
 
-    @Override
-    public CheckMarx currentCheckMarxMetrics(CheckMarxProject project) {
-        try {
-            initializationMetrics();
-            System.out.println(project.getInstanceUrl());
-            Document document = getDocument(project.getInstanceUrl());
-            parseDocument(document);
-            CheckMarx checkMarx = new CheckMarx();
-            this.metrics.put(TOTAL, this.metrics.get(LOW) + this.metrics.get(MEDIUM) + this.metrics.get(HIGH));
-            checkMarx.setMetrics(metrics);
-            checkMarx.setName(project.getProjectName());
-            checkMarx.setUrl(project.getInstanceUrl());
-            checkMarx.setTimestamp(getTimeStamp(getScanStart(document)));
-            return checkMarx;
-        } catch (Exception e) {
-            LOG.error(e);
-        }
-        return null;
+    private void parseCheckMarxDocument(Document document) {
+        parseProject(document);
+        parseMetrics(document);
+        this.checkMarx.setTimestamp(getTimeStamp(getScanStart(document)));
+    }
+
+    private void parseProject(Document document) {
+        NodeList cxXMLResultsTag = document.getElementsByTagName(CHECK_MARX_XML_RESULTS_TAG);
+        this.project.setProjectId(getProjectId(cxXMLResultsTag));
+        String name = getNodeAttributeValue(cxXMLResultsTag, PROJECT_NAME);
+        this.project.setProjectName(getProjectName(name, getScanStart(document)));
     }
 
     public void setSettings(CheckMarxSettings settings) {
         this.settings = settings;
     }
 
-    private void parseDocument(Document document) {
+    private void parseMetrics(Document document) {
         try {
             NodeList nodesWithResults = document.getElementsByTagName(RESULT_TAG);
             findScanRiskLevels(nodesWithResults);
@@ -121,7 +126,9 @@ public class DefaultCheckMarxClient implements CheckMarxClient {
         this.metrics.put(name, this.metrics.get(name) + 1);
     }
 
-    private void initializationMetrics() {
+    private void initializationFields() {
+        this.checkMarx = new CheckMarx();
+        this.project = new CheckMarxProject();
         this.metrics.put(LOW, 0);
         this.metrics.put(MEDIUM, 0);
         this.metrics.put(HIGH, 0);
@@ -136,6 +143,7 @@ public class DefaultCheckMarxClient implements CheckMarxClient {
             Document document = db.parse(url.openStream());
             document.getDocumentElement().normalize();
             return document;
+
         } catch (Exception e) {
             LOG.error("Could not parse document from: " + instanceUrl, e);
         }
@@ -154,8 +162,7 @@ public class DefaultCheckMarxClient implements CheckMarxClient {
         return 0;
     }
 
-    private Date getProjectDate(String timestamp)
-    {
+    private Date getProjectDate(String timestamp) {
         try {
             return new SimpleDateFormat(DATE_FORMAT, Locale.ENGLISH).parse(timestamp);
         } catch (java.text.ParseException e) {
@@ -180,9 +187,8 @@ public class DefaultCheckMarxClient implements CheckMarxClient {
         return getNodeAttributeValue(cxXMLResultsTag, PROJECT_ID);
     }
 
-    private String getProjectName(NodeList cxXMLResultsTag, String scanStart) {
-        String name = getNodeAttributeValue(cxXMLResultsTag, PROJECT_NAME);
-        Date date = getProjectDate(scanStart);
+    private String getProjectName(String name, String testingDate) {
+        Date date = getProjectDate(testingDate);
         if (date == null) {
             return name;
         }

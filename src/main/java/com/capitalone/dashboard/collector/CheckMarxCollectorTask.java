@@ -72,17 +72,14 @@ public class CheckMarxCollectorTask extends CollectorTask<CheckMarxCollector> {
         clean(collector, existingProjects);
 
         String instanceUrl = collector.getCheckMarxServer();
-        CheckMarxProject project = checkMarxClient.getProject(instanceUrl);
+        checkMarxClient.parseDocument(instanceUrl);
+        CheckMarxProject project = checkMarxClient.getProject();
         logBanner("Fetched project: " + project.getProjectName());
         latestProjects.add(project);
         if (isNewProject(project, existingProjects)) {
             addNewProject(project, collector);
         }
         refreshData(enabledProject(collector, project));
-    }
-
-    public DefaultCheckMarxClient getCheckMarxClient() {
-        return this.checkMarxClient;
     }
 
     private boolean isNewProject(CheckMarxProject project, List<CheckMarxProject> existingProjects) {
@@ -97,7 +94,7 @@ public class CheckMarxCollectorTask extends CollectorTask<CheckMarxCollector> {
     }
 
     private void refreshData(CheckMarxProject project) {
-        CheckMarx checkMarx = checkMarxClient.currentCheckMarxMetrics(project);
+        CheckMarx checkMarx = checkMarxClient.getCurrentMetrics(project);
         if (checkMarx != null && isNewCheckMarxData(project, checkMarx)) {
             checkMarx.setCollectorItemId(project.getId());
             checkMarxRepository.save(checkMarx);

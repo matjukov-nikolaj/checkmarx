@@ -13,6 +13,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/app/css/variables.less">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/app/dashboard/core/data-factories/blackduck-data.js">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../UI/src/app/dashboard/core/data-factories/checkmarx-data.js">
           <value>
             <set />
@@ -49,6 +59,36 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../../UI/src/components/templates/widgetsTemplate.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/widgets/blackduck/config.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/widgets/blackduck/config.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/widgets/blackduck/module.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/widgets/blackduck/view.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/widgets/blackduck/view.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/widgets/blackduck/view.less">
           <value>
             <set />
           </value>
@@ -128,6 +168,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/editors/CaseInsensitiveBlackDuckTypeEditor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/editors/CaseInsensitiveCheckMarxTypeEditor.java">
           <value>
             <set />
@@ -139,6 +184,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/editors/CaseIntensiveCodeSecurityTypeEditor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/request/BlackDuckCreateRequest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/request/BlackDuckRequest.java">
           <value>
             <set />
           </value>
@@ -163,12 +218,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/rest/BlackDuckController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/rest/CheckMarxController.java">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/rest/CodeSecurityController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/service/BlackDuckService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/service/BlackDuckServiceImpl.java">
           <value>
             <set />
           </value>
@@ -194,6 +264,71 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/service/CodeSecurityServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../blackduck/.idea/.name">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../blackduck/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../blackduck/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../blackduck/src/main/java/com/capitalone/dashboard/collector/BlackDuckClient.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../blackduck/src/main/java/com/capitalone/dashboard/collector/BlackDuckCollectorTask.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../blackduck/src/main/java/com/capitalone/dashboard/collector/BlackDuckSettings.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../blackduck/src/main/java/com/capitalone/dashboard/collector/DefaultBlackDuckClient.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../blackduck/src/main/java/com/capitalone/dashboard/model/BlackDuck.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../blackduck/src/main/java/com/capitalone/dashboard/model/BlackDuckCollector.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../blackduck/src/main/java/com/capitalone/dashboard/model/BlackDuckProject.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../blackduck/src/main/java/com/capitalone/dashboard/repository/BlackDuckCollectorRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../blackduck/src/main/java/com/capitalone/dashboard/repository/BlackDuckProjectRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../blackduck/src/main/java/com/capitalone/dashboard/repository/BlackDuckRepository.java">
           <value>
             <set />
           </value>
@@ -358,6 +493,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../codesecurity/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../codesecurity/src/main/java/com/capitalone/dashboard/collector/DefaultCodeSecurityClient.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../sonar/src/main/java/com/capitalone/dashboard/collector/SonarCollectorTask.java">
           <value>
             <set />
@@ -379,6 +524,21 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../../core/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../core/src/main/java/com/capitalone/dashboard/misc/BlackDuckType.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../core/src/main/java/com/capitalone/dashboard/model/BlackDuck.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../core/src/main/java/com/capitalone/dashboard/model/BlackDuckType.java">
           <value>
             <set />
           </value>
@@ -438,7 +598,17 @@
             <set />
           </value>
         </entry>
+        <entry key="C:/Program Files/Apache Software Foundation/Tomcat 8.5/webapps/blackduck-reports/blackduck-current.html">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$MAVEN_REPOSITORY$/com/capitalone/dashboard/core/2.0.5-SNAPSHOT/core-2.0.5-SNAPSHOT.jar!/com/capitalone/dashboard/model/BaseModel.class">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/blackduck-current.html">
           <value>
             <set />
           </value>

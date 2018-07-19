@@ -47,7 +47,8 @@ public class CheckMarxClientTest {
 
     @Test
     public void getProjects() throws Exception {
-        CheckMarxProject project = checkMarxClient.getProject(settings.getServer());
+        checkMarxClient.parseDocument(settings.getServer());
+        CheckMarxProject project = checkMarxClient.getProject();
         CheckMarxProject expectedProject = getExpectedCheckMarxProject();
         assertEquals(project, expectedProject);
         assertTrue(project.equals(expectedProject));
@@ -55,8 +56,9 @@ public class CheckMarxClientTest {
 
     @Test
     public void currentCheckMarxMetrics() throws Exception {
-        CheckMarxProject project = checkMarxClient.getProject(settings.getServer());
-        CheckMarx checkMarx = checkMarxClient.currentCheckMarxMetrics(project);
+        checkMarxClient.parseDocument(settings.getServer());
+        CheckMarxProject project = checkMarxClient.getProject();
+        CheckMarx checkMarx = checkMarxClient.getCurrentMetrics(project);
         Map<String, Integer> metrics = checkMarx.getMetrics();
         assertEquals(547, metrics.get(LOW).intValue());
         assertEquals(6, metrics.get(MEDIUM).intValue());
