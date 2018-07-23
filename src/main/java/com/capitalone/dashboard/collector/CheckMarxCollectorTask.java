@@ -1,6 +1,7 @@
 package com.capitalone.dashboard.collector;
 
 import com.capitalone.dashboard.model.*;
+import com.capitalone.dashboard.model.CheckMarx;
 import com.capitalone.dashboard.repository.*;
 
 import org.apache.commons.collections.CollectionUtils;
@@ -68,14 +69,12 @@ public class CheckMarxCollectorTask extends CollectorTask<CheckMarxCollector> {
         Set<ObjectId> udId = new HashSet<>();
         udId.add(collector.getId());
         List<CheckMarxProject> existingProjects = checkMarxProjectRepository.findByCollectorIdIn(udId);
-        List<CheckMarxProject> latestProjects = new ArrayList<>();
         clean(collector, existingProjects);
 
         String instanceUrl = collector.getCheckMarxServer();
         checkMarxClient.parseDocument(instanceUrl);
         CheckMarxProject project = checkMarxClient.getProject();
         logBanner("Fetched project: " + project.getProjectName());
-        latestProjects.add(project);
         if (isNewProject(project, existingProjects)) {
             addNewProject(project, collector);
         }
@@ -95,7 +94,7 @@ public class CheckMarxCollectorTask extends CollectorTask<CheckMarxCollector> {
 
     private void refreshData(CheckMarxProject project) {
         CheckMarx checkMarx = checkMarxClient.getCurrentMetrics(project);
-        if (checkMarx != null && isNewCheckMarxData(project, checkMarx)) {
+        if (checkMarx != null && isNewData(project, checkMarx)) {
             checkMarx.setCollectorItemId(project.getId());
             checkMarxRepository.save(checkMarx);
         }
@@ -105,13 +104,13 @@ public class CheckMarxCollectorTask extends CollectorTask<CheckMarxCollector> {
         return checkMarxProjectRepository.findCheckMarxProject(collector.getId(), project.getProjectId(), project.getProjectName());
     }
 
-    private boolean isNewCheckMarxData(CheckMarxProject project, CheckMarx checkMarx) {
+    private boolean isNewData(CheckMarxProject project, CheckMarx checkMarx) {
         return checkMarxRepository.findByCollectorItemIdAndTimestamp(
                 project.getId(), checkMarx.getTimestamp()) == null;
     }
 
     /**
-     * Clean up unused sonar collector items
+     * Clean up unused checkmarx collector items
      *
      * @param collector the {@link CheckMarxCollector}
      */

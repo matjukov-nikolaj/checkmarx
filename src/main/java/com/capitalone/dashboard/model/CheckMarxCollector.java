@@ -25,7 +25,6 @@ public class CheckMarxCollector extends Collector {
         allOptions.put(CheckMarxProject.PROJECT_NAME,"");
         allOptions.put(CheckMarxProject.PROJECT_ID, "");
         protoType.setAllFields(allOptions);
-
         Map<String, Object> uniqueOptions = new HashMap<>();
         uniqueOptions.put(CheckMarxProject.INSTANCE_URL,"");
         uniqueOptions.put(CheckMarxProject.PROJECT_NAME,"");

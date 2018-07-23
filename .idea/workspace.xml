@@ -4,9 +4,18 @@
     <list default="true" id="835f2583-f9a5-4118-a8e2-c591cd04ab17" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/CheckMarxClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/CheckMarxClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkmarx.iml" beforeDir="false" afterPath="$PROJECT_DIR$/checkmarx.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/codequalitycollector-2018-07-19.0.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/codequalitycollector-2018-07-19.0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/CheckMarxClient.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/CheckMarxCollectorTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/CheckMarxCollectorTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/CheckMarxSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/CheckMarxSettings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/DefaultCheckMarxClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/DefaultCheckMarxClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/CheckMarx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/CheckMarxCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/CheckMarxCollector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/CheckMarxProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/CheckMarxProject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/repository/CheckMarxProfileRepostory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/repository/CheckMarxRepository.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/capitalone/dashboard/collector/CheckMarxClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/capitalone/dashboard/collector/CheckMarxClientTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,50 +27,30 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="DefaultCheckMarxClient.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/DefaultCheckMarxClient.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="952">
-                  <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#1675#1676#0" expanded="true" />
-                    <element signature="e#1715#1716#0" expanded="true" />
-                    <element signature="e#1773#1774#0" expanded="true" />
-                    <element signature="e#1808#1809#0" expanded="true" />
-                    <element signature="e#3146#3147#0" expanded="true" />
-                    <element signature="e#3186#3187#0" expanded="true" />
-                    <element signature="e#4289#4290#0" expanded="true" />
-                    <element signature="e#4355#4356#0" expanded="true" />
-                    <element signature="e#6475#6476#0" expanded="true" />
-                    <element signature="e#6548#6549#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="CheckMarxClient.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/CheckMarxClient.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="CheckMarxCollectorTask.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/CheckMarxCollectorTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="110" selection-start-line="110" selection-end-line="110" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1532073626177" expanded="true" signature="3568:3856" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckMarxClientTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/capitalone/dashboard/collector/CheckMarxClientTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-464">
+              <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -83,6 +72,7 @@
       <find>CodeS</find>
       <find>CollectorType</find>
       <find>CollectorTy</find>
+      <find>log</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -111,21 +101,22 @@
         <option value="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/QCheckMarx.java" />
         <option value="$PROJECT_DIR$/../../../core/src/main/java/com/capitalone/dashboard/model/CollectorType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/CheckMarxMetrics.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/CheckMarxProject.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/repository/CheckMarxProjectRepository.java" />
         <option value="$PROJECT_DIR$/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/CheckMarx.java" />
         <option value="$PROJECT_DIR$/.idea/.name" />
-        <option value="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/CheckMarxCollector.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/repository/CheckMarxRepository.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/capitalone/dashboard/collector/CheckMarxCollectorTaskTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/CheckMarxSettings.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/capitalone/dashboard/model/CheckMarxTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/DefaultCodeSecurityClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/DefaultCheckMarxClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/repository/CheckMarxRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/CheckMarxCollector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/CheckMarxProject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/CheckMarxSettings.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/CheckMarxClient.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/capitalone/dashboard/collector/CheckMarxClientTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/CheckMarxCollectorTask.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/capitalone/dashboard/collector/CheckMarxClientTest.java" />
       </list>
     </option>
   </component>
@@ -263,10 +254,15 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sonar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.capitalone.dashboard.collector" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -361,12 +357,16 @@
       <workItem from="1531463628502" duration="1572000" />
       <workItem from="1531722804840" duration="29061000" />
       <workItem from="1531808073153" duration="1596000" />
-      <workItem from="1531809828404" duration="26625000" />
+      <workItem from="1531809828404" duration="32649000" />
+      <workItem from="1532065044557" duration="3999000" />
+      <workItem from="1532069712663" duration="4859000" />
+      <workItem from="1532328541658" duration="635000" />
+      <workItem from="1532331172537" duration="138000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180646000" />
+    <option name="totallyTimeSpent" value="196301000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3832" y="-8" width="1936" height="1056" extended-state="6" />
@@ -383,17 +383,17 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.09714889" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.36430833" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32946146" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2967265" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2967265" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20677084" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20729166" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info anchor="bottom" id="SonarLint" order="7" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -451,7 +451,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/CheckMarxCollectorTask.java</url>
-          <line>64</line>
+          <line>65</line>
           <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
@@ -460,16 +460,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Hygieia/core/src/main/java/com/capitalone/dashboard/model/CollectorType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../core/src/main/java/com/capitalone/dashboard/model/BaseModel.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -555,13 +545,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../core/target/generated-sources/java/com/capitalone/dashboard/model/QCodeSecurity.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/capitalone/dashboard/lol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/capitalone/dashboard/lol.java" />
     <entry file="file://$PROJECT_DIR$/../../../core/src/main/java/com/capitalone/dashboard/model/CodeQualityType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -597,13 +581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="83" selection-start-line="83" selection-end-line="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-145">
-          <caret line="101" column="16" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -646,23 +623,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/repository/CheckMarxRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/capitalone/dashboard/model/CheckMarxTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/capitalone/dashboard/collector/CheckMarxCollectorTaskTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="454">
+          <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/capitalone/dashboard/model/CheckMarxTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/CheckMarx.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/capitalone/dashboard/core/2.0.5-SNAPSHOT/core-2.0.5-SNAPSHOT.jar!/com/capitalone/dashboard/collector/CollectorTask.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/DefaultCodeSecurityClient.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/repository/CheckMarxRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/repository/CheckMarxProfileRepostory.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/CheckMarxCollector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -673,67 +656,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/repository/CheckMarxProfileRepostory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="104" selection-start-line="12" selection-start-column="104" selection-end-line="12" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/capitalone/dashboard/collector/CheckMarxCollectorTaskTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/CheckMarx.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/CheckMarxSettings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/capitalone/dashboard/collector/CheckMarxClientTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/CheckMarxProject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="34" column="57" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/CheckMarxCollector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/repository/CheckMarxProjectRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -741,51 +663,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/capitalone/dashboard/core/2.0.5-SNAPSHOT/core-2.0.5-SNAPSHOT.jar!/com/capitalone/dashboard/collector/CollectorTask.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/CheckMarxClient.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/DefaultCheckMarxClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="658">
+          <caret line="147" column="42" selection-start-line="147" selection-start-column="42" selection-end-line="147" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/CheckMarxSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/model/CheckMarxProject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/CheckMarxCollectorTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+        <state relative-caret-position="194">
+          <caret line="110" selection-start-line="110" selection-end-line="110" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1532004795583" expanded="true" signature="3623:3911" ph="..." />
+            <marker date="1532073626177" expanded="true" signature="3568:3856" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/CheckMarxClient.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/capitalone/dashboard/collector/CheckMarxClientTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/DefaultCheckMarxClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1675#1676#0" expanded="true" />
-            <element signature="e#1715#1716#0" expanded="true" />
-            <element signature="e#1773#1774#0" expanded="true" />
-            <element signature="e#1808#1809#0" expanded="true" />
-            <element signature="e#3146#3147#0" expanded="true" />
-            <element signature="e#3186#3187#0" expanded="true" />
-            <element signature="e#4289#4290#0" expanded="true" />
-            <element signature="e#4355#4356#0" expanded="true" />
-            <element signature="e#6475#6476#0" expanded="true" />
-            <element signature="e#6548#6549#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-464">
+          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
         </state>
       </provider>
     </entry>

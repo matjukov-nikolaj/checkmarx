@@ -168,6 +168,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../../api/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/editors/CaseInsensitiveBlackDuckTypeEditor.java">
           <value>
             <set />
@@ -264,6 +269,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/service/CodeSecurityServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../codesecurity/pom.xml">
           <value>
             <set />
           </value>
@@ -374,6 +384,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/DefaultCheckMarxClient.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/capitalone/dashboard/collector/DefaultCodeSecurityClient.java">
           <value>
             <set />
           </value>
@@ -498,7 +513,67 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../codesecurity/src/main/java/codesecurity/api/editors/CaseInsensitiveCodeSecurityTypeEditor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../codesecurity/src/main/java/codesecurity/api/editors/CaseIntensitiveCodeSecurityTypeEditor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../codesecurity/src/main/java/codesecurity/api/request/CodeSecurityCreateRequest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../codesecurity/src/main/java/codesecurity/api/request/CodeSecurityRequest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../codesecurity/src/main/java/codesecurity/api/service/CodeSecurityService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../codesecurity/src/main/java/codesecurity/collector/CodeSecurityCollectorTask.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../codesecurity/src/main/java/codesecurity/collector/CodeSecuritySettings.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../codesecurity/src/main/java/codesecurity/collector/CollectorCleaner.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../codesecurity/src/main/java/codesecurity/collector/DefaultCodeSecurityClient.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../codesecurity/src/main/java/codesecurity/model/CodeSecurityCollector.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../codesecurity/src/main/java/codesecurity/model/CodeSecurityProject.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../codesecurity/src/main/java/com/capitalone/dashboard/collector/DefaultCodeSecurityClient.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../gs-maven/initial/pom.xml">
           <value>
             <set />
           </value>

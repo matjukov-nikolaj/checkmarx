@@ -1,13 +1,11 @@
 package com.capitalone.dashboard.collector;
 
-import com.capitalone.dashboard.model.CheckMarx;
 import com.capitalone.dashboard.model.CheckMarxProject;
-import com.capitalone.dashboard.model.CheckMarxCollector;
+import com.capitalone.dashboard.model.CheckMarx;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
-import org.mockito.Matchers;
 import org.mockito.runners.MockitoJUnitRunner;
 
 import java.util.Map;
@@ -15,7 +13,6 @@ import java.util.Map;
 import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertThat;
 import static org.hamcrest.Matchers.is;
-import static com.sun.org.apache.xerces.internal.util.PropertyState.is;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(MockitoJUnitRunner.class)
