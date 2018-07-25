@@ -80,7 +80,7 @@ public class CheckMarxCollectorTaskTest extends CheckMarxTestUtils {
 
 
     @Test
-    public void collectEmpty() throws Exception {
+    public void collectEmpty() {
         when(mockComponentRepository.findAll()).thenReturn(components());
         task.collect(new CheckMarxCollector());
         verifyZeroInteractions(mockRepository);

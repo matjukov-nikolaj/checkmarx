@@ -12,7 +12,7 @@ import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.*;
 
 @RunWith(MockitoJUnitRunner.class)
-public class CheckMarxClientTest extends CheckMarxTestUtils {
+public class DefaultCheckMarxClientTest extends CheckMarxTestUtils {
     @Mock
     private CheckMarxSettings settings;
     private DefaultCheckMarxClient checkMarxClient;
@@ -59,8 +59,8 @@ public class CheckMarxClientTest extends CheckMarxTestUtils {
         assertEquals(1531530177000L, checkMarx.getTimestamp());
     }
 
-    @Test(expected = NullPointerException.class)
-    public void throwNullPointerExceptionWhenCanNotGetACheckMarxReport() throws NullPointerException {
+    @Test
+    public void throwNullPointerExceptionWhenCanNotGetACheckMarxReport() {
         checkMarxClient.parseDocument(getUrlToTestFile(FAIL_SERVER));
     }
 

@@ -50,7 +50,7 @@ public class DefaultCheckMarxClient extends DefaultCodeSecurityClient<CheckMarx,
         this.project.setInstanceUrl(instanceUrl);
     }
 
-    protected void parseCodeSecurityDocument(Document document) {
+    protected void parseCodeSecurityDocument(Document document) throws Exception {
         parseProject(document);
         parseMetrics(document);
         setCheckMarxMetrics(document);
@@ -81,14 +81,10 @@ public class DefaultCheckMarxClient extends DefaultCodeSecurityClient<CheckMarx,
     }
 
     private void parseProject(Document document) {
-        try {
-            NodeList cxXMLResultsTag = document.getElementsByTagName(CHECK_MARX_XML_RESULTS_TAG);
-            this.project.setProjectId(getProjectId(cxXMLResultsTag));
-            String name = getNodeAttributeValue(cxXMLResultsTag, PROJECT_NAME);
-            this.project.setProjectName(getProjectName(name, getScanStart(document)));
-        } catch (Exception e) {
-            LOG.error(e);
-        }
+        NodeList cxXMLResultsTag = document.getElementsByTagName(CHECK_MARX_XML_RESULTS_TAG);
+        this.project.setProjectId(getProjectId(cxXMLResultsTag));
+        String name = getNodeAttributeValue(cxXMLResultsTag, PROJECT_NAME);
+        this.project.setProjectName(getProjectName(name, getScanStart(document)));
     }
 
     public void setSettings(CheckMarxSettings settings) {
@@ -96,12 +92,8 @@ public class DefaultCheckMarxClient extends DefaultCodeSecurityClient<CheckMarx,
     }
 
     private void parseMetrics(Document document) {
-        try {
-            NodeList nodesWithResults = document.getElementsByTagName(RESULT_TAG);
-            findScanRiskLevels(nodesWithResults);
-        } catch (Exception e) {
-            LOG.error(e);
-        }
+        NodeList nodesWithResults = document.getElementsByTagName(RESULT_TAG);
+        findScanRiskLevels(nodesWithResults);
     }
 
     private void findScanRiskLevels(NodeList nodes) {
