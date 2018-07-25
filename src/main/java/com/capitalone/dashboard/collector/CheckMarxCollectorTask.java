@@ -93,6 +93,9 @@ public class CheckMarxCollectorTask extends CollectorTask<CheckMarxCollector> {
     }
 
     private void refreshData(CheckMarxProject project) {
+        if (project == null) {
+            return;
+        }
         CheckMarx checkMarx = checkMarxClient.getCurrentMetrics(project);
         if (checkMarx != null && isNewData(project, checkMarx)) {
             checkMarx.setCollectorItemId(project.getId());

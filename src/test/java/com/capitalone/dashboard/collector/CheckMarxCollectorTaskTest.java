@@ -1,71 +1,103 @@
 package com.capitalone.dashboard.collector;
 
-import com.capitalone.dashboard.model.CheckMarxCollector;
-import com.capitalone.dashboard.model.Component;
-import com.capitalone.dashboard.model.ConfigHistOperationType;
+import com.capitalone.dashboard.model.*;
 import com.capitalone.dashboard.repository.*;
 import org.bson.types.ObjectId;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.ParseException;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.Mockito;
-import org.mockito.MockitoAnnotations;
 import org.mockito.runners.MockitoJUnitRunner;
-import org.mockito.stubbing.OngoingStubbing;
 import org.springframework.scheduling.TaskScheduler;
-import org.springframework.scheduling.Trigger;
-import org.springframework.scheduling.concurrent.DefaultManagedTaskScheduler;
 
-import java.net.URL;
+import static junit.framework.TestCase.assertTrue;
+import static org.junit.Assert.*;
+import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
+
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Date;
-import java.util.concurrent.ScheduledFuture;
 
-import static org.junit.Assert.assertThat;
-import static org.hamcrest.Matchers.is;
 import static org.mockito.Mockito.*;
 
 @RunWith(MockitoJUnitRunner.class)
-public class CheckMarxCollectorTaskTest {
+public class CheckMarxCollectorTaskTest extends CheckMarxTestUtils {
 
-    @InjectMocks private CheckMarxCollectorTask task;
-    @Mock private CheckMarxCollectorRepository checkMarxCollectorRepository;
-    @Mock private CheckMarxProjectRepository checkMarxProjectRepository;
-    @Mock private CheckMarxRepository checkMarxRepository;
+    private CheckMarxCollectorTask task;
 
-    @Mock private ComponentRepository dbComponentRepository;
+    private TaskScheduler mockScheduler;
+    private CheckMarxCollectorRepository mockCollectorRepository;
+    private CheckMarxProjectRepository mockProjectRepository;
+    private CheckMarxRepository mockRepository;
+    private ComponentRepository mockComponentRepository;
+    private DefaultCheckMarxClient client;
 
-    private static final String SERVER = "checkmarx-tests/test1.xml";
+    private static final String SERVER = "checkmarx-tests/test.xml";
     private static final String CRON = "0 0/1 * * * *";
+
+    @Before
+    public void setup() {
+        mockScheduler = mock(TaskScheduler.class);
+        mockCollectorRepository = mock(CheckMarxCollectorRepository.class);
+        mockProjectRepository = mock(CheckMarxProjectRepository.class);
+        mockRepository = mock(CheckMarxRepository.class);
+        mockComponentRepository = mock(ComponentRepository.class);
+
+        CheckMarxSettings settings = new CheckMarxSettings();
+        settings.setCron(CRON);
+        settings.setServer(getUrlToTestFile(SERVER));
+        settings.setUsername("");
+        settings.setPassword("");
+
+        client = new DefaultCheckMarxClient(settings);
+        this.task = new CheckMarxCollectorTask(mockScheduler, mockCollectorRepository, mockProjectRepository,
+                mockRepository, client, settings, mockComponentRepository);
+    }
+
+    @Test
+    public void getCollectorReturnsAJenkinsCodeQualityCollector() {
+        final CheckMarxCollector collector = task.getCollector();
+
+        assertThat(collector).isNotNull().isInstanceOf(CheckMarxCollector.class);
+        assertThat(collector.isEnabled()).isTrue();
+        assertThat(collector.isOnline()).isTrue();
+        assertThat(collector.getCheckMarxServer()).contains(getUrlToTestFile(SERVER));
+        assertThat(collector.getCollectorType()).isEqualTo(CollectorType.CheckMarx);
+        assertThat(collector.getName()).isEqualTo("CheckMarx");
+        assertThat(collector.getAllFields().get("instanceUrl")).isEqualTo("");
+        assertThat(collector.getAllFields().get("projectName")).isEqualTo("");
+        assertThat(collector.getAllFields().get("projectId")).isEqualTo("");
+        assertThat(collector.getUniqueFields().get("instanceUrl")).isEqualTo("");
+        assertThat(collector.getUniqueFields().get("projectName")).isEqualTo("");
+    }
+
+    @Test
+    public void getCollectorRepositoryReturnsTheRepository() {
+        assertThat(task.getCollectorRepository()).isNotNull().isSameAs(mockCollectorRepository);
+    }
+
+    @Test
+    public void getCron() {
+        assertThat(task.getCron()).isNotNull().isSameAs(CRON);
+    }
+
 
     @Test
     public void collectEmpty() throws Exception {
-        when(dbComponentRepository.findAll()).thenReturn(components());
+        when(mockComponentRepository.findAll()).thenReturn(components());
         task.collect(new CheckMarxCollector());
-        verifyZeroInteractions(checkMarxRepository);
+        verifyZeroInteractions(mockRepository);
     }
 
-//    @Test
-//    public void collectWithServer() throws Exception {
-//        when(dbComponentRepository.findAll()).thenReturn(components());
-//        TaskScheduler taskScheduler = new DefaultManagedTaskScheduler();
-//        CheckMarxSettings checkMarxSettings = new CheckMarxSettings();
-//        checkMarxSettings.setCron(CRON);
-//        checkMarxSettings.setServer(getUrlToTestFile());
-//        DefaultCheckMarxClient checkMarxClient = new DefaultCheckMarxClient(checkMarxSettings);
-//        task = new CheckMarxCollectorTask(taskScheduler, checkMarxCollectorRepository,
-//                checkMarxProjectRepository, checkMarxRepository,
-//                checkMarxClient, checkMarxSettings, dbComponentRepository);
-//        task.collect(collectorWithServer());
-        //assertThat(task.getCron(), is(CRON));
-//    }
+    @Test
+    public void collectWithServer() {
+        when(mockComponentRepository.findAll()).thenReturn(components());
+        CheckMarxCollector collector = collectorWithServer();
+        task.collect(collector);
+        CheckMarxProject project = client.getProject();
+        CheckMarxProject expectedProject = getExpectedCheckMarxProject();
+        assertEquals(project, expectedProject);
+        assertTrue(project.equals(expectedProject));
+        verify(mockProjectRepository).save(project);
+        verify(mockProjectRepository).findCheckMarxProject(collector.getId(), project.getProjectId(), project.getProjectName());
+    }
 
     private ArrayList<com.capitalone.dashboard.model.Component> components() {
         ArrayList<com.capitalone.dashboard.model.Component> cArray = new ArrayList<>();
@@ -77,12 +109,15 @@ public class CheckMarxCollectorTaskTest {
         return cArray;
     }
 
-    private String getUrlToTestFile() {
-        ClassLoader classLoader = getClass().getClassLoader();
-        return classLoader.getResource(SERVER).toString();
+    protected String getUrl(String server) {
+        return getUrlToTestFile(server);
+    }
+
+    protected String getServer() {
+        return SERVER;
     }
 
     private CheckMarxCollector collectorWithServer() {
-        return CheckMarxCollector.prototype(getUrlToTestFile());
+        return CheckMarxCollector.prototype(getUrlToTestFile(SERVER));
     }
 }

@@ -1,6 +1,6 @@
 package com.capitalone.dashboard.model;
 
-import codesecurity.model.CodeSecurityProject;
+import codesecurity.collectors.model.CodeSecurityProject;
 
 public class CheckMarxProject extends CodeSecurityProject {
 

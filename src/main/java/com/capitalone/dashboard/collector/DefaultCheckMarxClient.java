@@ -1,6 +1,6 @@
 package com.capitalone.dashboard.collector;
 
-import codesecurity.collector.DefaultCodeSecurityClient;
+import codesecurity.collectors.collector.DefaultCodeSecurityClient;
 import com.capitalone.dashboard.model.CheckMarxProject;
 import com.capitalone.dashboard.model.CheckMarx;
 import org.apache.commons.logging.Log;
@@ -81,10 +81,14 @@ public class DefaultCheckMarxClient extends DefaultCodeSecurityClient<CheckMarx,
     }
 
     private void parseProject(Document document) {
-        NodeList cxXMLResultsTag = document.getElementsByTagName(CHECK_MARX_XML_RESULTS_TAG);
-        this.project.setProjectId(getProjectId(cxXMLResultsTag));
-        String name = getNodeAttributeValue(cxXMLResultsTag, PROJECT_NAME);
-        this.project.setProjectName(getProjectName(name, getScanStart(document)));
+        try {
+            NodeList cxXMLResultsTag = document.getElementsByTagName(CHECK_MARX_XML_RESULTS_TAG);
+            this.project.setProjectId(getProjectId(cxXMLResultsTag));
+            String name = getNodeAttributeValue(cxXMLResultsTag, PROJECT_NAME);
+            this.project.setProjectName(getProjectName(name, getScanStart(document)));
+        } catch (Exception e) {
+            LOG.error(e);
+        }
     }
 
     public void setSettings(CheckMarxSettings settings) {

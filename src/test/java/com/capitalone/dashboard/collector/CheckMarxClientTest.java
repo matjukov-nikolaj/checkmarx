@@ -7,23 +7,18 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
-
 import java.util.Map;
-
 import static junit.framework.TestCase.assertTrue;
-import static org.junit.Assert.assertThat;
-import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 @RunWith(MockitoJUnitRunner.class)
-public class CheckMarxClientTest {
+public class CheckMarxClientTest extends CheckMarxTestUtils {
     @Mock
     private CheckMarxSettings settings;
     private DefaultCheckMarxClient checkMarxClient;
 
     private static final String SERVER = "checkmarx-tests/test.xml";
-    private static final String EXPECTED_NAME = "test:2018-7-14";
-    private static final String EXPECTED_ID = "1";
+    private static final String FAIL_SERVER = "checkmarx-tests/fail-test.xml";
     private static final String CRON = "0 0/1 * * * *";
 
     private static final String LOW = "Low";
@@ -43,7 +38,7 @@ public class CheckMarxClientTest {
     }
 
     @Test
-    public void getProjects() throws Exception {
+    public void canGetProjects() {
         checkMarxClient.parseDocument(settings.getServer());
         CheckMarxProject project = checkMarxClient.getProject();
         CheckMarxProject expectedProject = getExpectedCheckMarxProject();
@@ -52,7 +47,7 @@ public class CheckMarxClientTest {
     }
 
     @Test
-    public void currentCheckMarxMetrics() throws Exception {
+    public void canGetCurrentCheckMarxMetrics() {
         checkMarxClient.parseDocument(settings.getServer());
         CheckMarxProject project = checkMarxClient.getProject();
         CheckMarx checkMarx = checkMarxClient.getCurrentMetrics(project);
@@ -64,16 +59,16 @@ public class CheckMarxClientTest {
         assertEquals(1531530177000L, checkMarx.getTimestamp());
     }
 
-    private String getUrlToTestFile(String server) {
-        ClassLoader classLoader = getClass().getClassLoader();
-        return classLoader.getResource(server).toString();
+    @Test(expected = NullPointerException.class)
+    public void throwNullPointerExceptionWhenCanNotGetACheckMarxReport() throws NullPointerException {
+        checkMarxClient.parseDocument(getUrlToTestFile(FAIL_SERVER));
     }
 
-    private CheckMarxProject getExpectedCheckMarxProject() {
-        CheckMarxProject project = new CheckMarxProject();
-        project.setProjectName(EXPECTED_NAME);
-        project.setProjectId(EXPECTED_ID);
-        project.setInstanceUrl(getUrlToTestFile(SERVER));
-        return project;
+    protected String getUrl(String server) {
+        return getUrlToTestFile(server);
+    }
+
+    protected String getServer() {
+        return SERVER;
     }
 }

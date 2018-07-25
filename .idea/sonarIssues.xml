@@ -18,6 +18,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/app/dashboard/core/data-factories/appscan-data.js">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../UI/src/app/dashboard/core/data-factories/blackduck-data.js">
           <value>
             <set />
@@ -59,6 +64,36 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../../UI/src/components/templates/widgetsTemplate.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/widgets/appscan/config.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/widgets/appscan/config.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/widgets/appscan/module.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/widgets/appscan/view.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/widgets/appscan/view.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../UI/src/components/widgets/appscan/view.less">
           <value>
             <set />
           </value>
@@ -173,6 +208,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/editors/CaseInsensitiveAppScanTypeEditor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/editors/CaseInsensitiveBlackDuckTypeEditor.java">
           <value>
             <set />
@@ -189,6 +229,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/editors/CaseIntensiveCodeSecurityTypeEditor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/request/AppScanCreateRequest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/request/AppScanRequest.java">
           <value>
             <set />
           </value>
@@ -223,6 +273,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/rest/AppScanController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/rest/BlackDuckController.java">
           <value>
             <set />
@@ -234,6 +289,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/rest/CodeSecurityController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../api/src/main/java/com/capitalone/dashboard/service/AppScanServiceImpl.java">
           <value>
             <set />
           </value>
@@ -274,6 +334,131 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../../codesecurity/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../codesecurity/src/main/java/codesecurity/collectors/collector/CodeSecurityCollectorTask.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../codesecurity/src/main/java/codesecurity/collectors/collector/CodeSecuritySettings.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../codesecurity/src/main/java/codesecurity/collectors/collector/DefaultCodeSecurityClient.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../codesecurity/src/main/java/codesecurity/collectors/model/CodeSecurityProject.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../codesecurity/src/main/java/codesecurity/core/model/AppScan.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../codesecurity/src/main/java/codesecurity/core/model/AppScanType.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../codesecurity/src/main/java/codesecurity/core/model/BlackDuck.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../codesecurity/src/main/java/codesecurity/core/model/BlackDuckType.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../codesecurity/src/main/java/codesecurity/core/model/CheckMarx.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../codesecurity/src/main/java/codesecurity/core/model/CheckMarxType.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../codesecurity/src/main/java/codesecurity/core/model/CodeSecurity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../codesecurity/src/main/java/codesecurity/core/model/CollectorType.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../appscan/.idea/.name">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../appscan/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../appscan/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../appscan/src/main/java/com/capitalone/dashboard/Application.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../appscan/src/main/java/com/capitalone/dashboard/collector/AppScanCollectorTask.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../appscan/src/main/java/com/capitalone/dashboard/collector/AppScanSettings.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../appscan/src/main/java/com/capitalone/dashboard/collector/BlackDuckCollectorTask.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../appscan/src/main/java/com/capitalone/dashboard/collector/DefaultAppScanClient.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../appscan/src/main/java/com/capitalone/dashboard/model/AppScanCollector.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../appscan/src/main/java/com/capitalone/dashboard/model/AppScanProject.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../appscan/src/main/java/com/capitalone/dashboard/repository/AppScanProjectRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../appscan/src/main/java/com/capitalone/dashboard/repository/AppScanRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../appscan/src/main/java/com/capitalone/dashboard/repository/BlackDuckCollectorRepository.java">
           <value>
             <set />
           </value>
@@ -493,6 +678,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/com/capitalone/dashboard/collector/CheckMarxTestUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/test/java/com/capitalone/dashboard/collector/SonarCollectorTaskTest.java">
           <value>
             <set />
@@ -504,6 +694,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/test/java/com/capitalone/dashboard/model/CodeSecurityTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/target/pmd.xml">
           <value>
             <set />
           </value>
@@ -608,6 +803,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../../core/src/main/java/com/capitalone/dashboard/model/AppScan.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../core/src/main/java/com/capitalone/dashboard/model/AppScanType.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../core/src/main/java/com/capitalone/dashboard/model/BlackDuck.java">
           <value>
             <set />
@@ -658,6 +863,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../../core/src/main/java/com/capitalone/dashboard/repository/AppScanRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../core/src/main/java/com/capitalone/dashboard/repository/BlackDuckRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../core/src/main/java/com/capitalone/dashboard/repository/CodeQualityRepository.java">
           <value>
             <set />
@@ -668,12 +883,32 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../../core/src/main/java/com/capitalone/dashboard/repository/a.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../core/target/generated-sources/java/com/capitalone/dashboard/model/QCheckMarx.java">
           <value>
             <set />
           </value>
         </entry>
         <entry key="C:/Program Files/Apache Software Foundation/Tomcat 8.5/webapps/blackduck-reports/blackduck-current.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$MAVEN_REPOSITORY$/codesecurity/CodeSecurity/2.0.5-SNAPSHOT/CodeSecurity-2.0.5-SNAPSHOT.jar!/codesecurity/api/service/CodeSecurityService.class">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$MAVEN_REPOSITORY$/codesecurity/CodeSecurity/2.0.5-SNAPSHOT/CodeSecurity-2.0.5-SNAPSHOT.jar!/codesecurity/collectors/collector/DefaultCodeSecurityClient.class">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$MAVEN_REPOSITORY$/com/capitalone/dashboard/core/2.0.5-SNAPSHOT/core-2.0.5-SNAPSHOT.jar!/com/capitalone/dashboard/collector/CollectorTask.class">
           <value>
             <set />
           </value>
