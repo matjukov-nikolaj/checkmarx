@@ -52,7 +52,7 @@ public class CheckMarxCollectorTaskTest extends CheckMarxTestUtils {
     }
 
     @Test
-    public void getCollectorReturnsAJenkinsCodeQualityCollector() {
+    public void getCollectorReturnsCheckMarxCollector() {
         final CheckMarxCollector collector = task.getCollector();
 
         assertThat(collector).isNotNull().isInstanceOf(CheckMarxCollector.class);
