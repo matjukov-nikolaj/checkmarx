@@ -26,7 +26,6 @@ public class CheckMarxCollectorTaskTest extends CheckMarxTestUtils {
     private CheckMarxCollectorRepository mockCollectorRepository;
     private CheckMarxProjectRepository mockProjectRepository;
     private CheckMarxRepository mockRepository;
-    private ComponentRepository mockComponentRepository;
     private DefaultCheckMarxClient client;
 
     private static final String SERVER = "checkmarx-tests/test.xml";
@@ -38,7 +37,6 @@ public class CheckMarxCollectorTaskTest extends CheckMarxTestUtils {
         mockCollectorRepository = mock(CheckMarxCollectorRepository.class);
         mockProjectRepository = mock(CheckMarxProjectRepository.class);
         mockRepository = mock(CheckMarxRepository.class);
-        mockComponentRepository = mock(ComponentRepository.class);
 
         CheckMarxSettings settings = new CheckMarxSettings();
         settings.setCron(CRON);
@@ -48,7 +46,7 @@ public class CheckMarxCollectorTaskTest extends CheckMarxTestUtils {
 
         client = new DefaultCheckMarxClient(settings);
         this.task = new CheckMarxCollectorTask(mockScheduler, mockCollectorRepository, mockProjectRepository,
-                mockRepository, client, settings, mockComponentRepository);
+                mockRepository, client, settings);
     }
 
     @Test
@@ -81,22 +79,18 @@ public class CheckMarxCollectorTaskTest extends CheckMarxTestUtils {
 
     @Test
     public void collectEmpty() {
-        when(mockComponentRepository.findAll()).thenReturn(components());
         task.collect(new CheckMarxCollector());
-        verifyZeroInteractions(mockRepository);
+        verifyZeroInteractions(mockProjectRepository);
     }
 
     @Test
     public void collectWithServer() {
-        when(mockComponentRepository.findAll()).thenReturn(components());
         CheckMarxCollector collector = collectorWithServer();
         task.collect(collector);
         CheckMarxProject project = client.getProject();
         CheckMarxProject expectedProject = getExpectedCheckMarxProject();
         assertEquals(project, expectedProject);
         assertTrue(project.equals(expectedProject));
-        verify(mockProjectRepository).save(project);
-        verify(mockProjectRepository).findCheckMarxProject(collector.getId(), project.getProjectId(), project.getProjectName());
     }
 
     private ArrayList<com.capitalone.dashboard.model.Component> components() {
